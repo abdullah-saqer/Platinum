@@ -176,7 +176,7 @@ require("functions/engine.php");
                 </div>
                 <div class="col-sm-4">
                 <div class="thumbnail">
-                    <img src="img/pro.png" alt="San Francisco">
+                    <img src="img/nadeem.png" alt="San Francisco">
                         <p><strong>Mac Book-Air</strong></p>
                             <p style="color:red;"><del>600JD</del></p>
                             <p>500JD</p>
@@ -218,104 +218,120 @@ require("functions/engine.php");
           
       <hr>
       <hr>
+      <!--  put here the box of the last update thing -->
+    <div id="latest_item_div_title"> Latest Items</div>
+       <div id="latest_items_box">
+         <table id="latest_items_table">
+          <tr>
+                  <td rowspan="2">
+                    <div id="td_content">
+                      <img id="item_box_img" src="nadeem.png" />
+                      <div id="item_box_data">- Our New Item -</div>
+                      <div id="item_box_data">New Item</div>
+                      <button id="item_box_button" type="button">View Item</button>
+                    </div>
+                  </td>
+                  <td >
+                    <div id="td_content">
+                      <img id="item_box_img" src="nadeem.png" />
+                      <div id="item_box_data">New Item</div>
+                      <button id="item_box_button" type="button">View Item</button>
+                    </div>
+                  </td>
+                  <td >
+                    <div id="td_content">
+                      <img id="item_box_img" src="nadeem.png" />
+                      <div id="item_box_data">New Item</div>
+                      <button id="item_box_button" type="button">View Item</button>
+                    </div>
+                  </td>
+                  <td >
+                    <div id="td_content">
+                      <img id="item_box_img" src="nadeem.png" />
+                      <div id="item_box_data">New Item</div>
+                      <button id="item_box_button" type="button">View Item</button>
+                    </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td >
+                  <div id="td_content">
+                      <img id="item_box_img" src="nadeem.png" />
+                      <div id="item_box_data">New Item</div>
+                      <button id="item_box_button" type="button">View Item</button>
+                  </div>
+                  </td>
+                   <td >
+                   <div id="td_content">
+                      <img id="item_box_img" src="nadeem.png" />
+                      <div id="item_box_data">New Item</div>
+                      <button id="item_box_button" type="button">View Item</button>
+                    </div>
+                  </td>
+                   <td >
+                   <div id="td_content">
+                      <img id="item_box_img" src="nadeem.png" />
+                      <div id="item_box_data">New Item</div>
+                      <button id="item_box_button" type="button">View Item</button>
+                    </div>
+                  </td>
+               </tr>
+         </table>
+
+           <table id="latest_items_table">
+             <tr>
+                <td >
+                   <div id="td_content">
+                      <img id="item_box_img" src="nadeem.png" />
+                      <div id="item_box_data">New Item</div>
+                      <button id="item_box_button" type="button">View Item</button>
+                    </div>
+                  </td>
+                  <td >
+                   <div id="td_content">
+                      <img id="item_box_img" src="nadeem.png" />
+                      <div id="item_box_data">New Item</div>
+                      <button id="item_box_button" type="button">View Item</button>
+                    </div>
+                  </td>
+                  <td >
+                   <div id="td_content">
+                      <img id="item_box_img" src="nadeem.png" />
+                      <div id="item_box_data">New Item</div>
+                      <button id="item_box_button" type="button">View Item</button>
+                    </div>
+                  </td>
+                  <td >
+                   <div id="td_content">
+                      <img id="item_box_img" src="nadeem.png" />
+                      <div id="item_box_data">New Item</div>
+                      <button id="item_box_button" type="button">View Item</button>
+                    </div>
+                  </td>
+                  <td >
+                   <div id="td_content">
+                      <img id="item_box_img" src="nadeem.png" />
+                      <div id="item_box_data">New Item</div>
+                      <button id="item_box_button" type="button">View Item</button>
+                    </div>
+                  </td>
+             </tr>
+           </table>
+        </div>
+
+    </div>
+
 
       <div class="scroll_to_top">
         <span id="up_arrow" class="glyphicon glyphicon-menu-up">
       </div>
-      <!--  put here the box of the last update thing -->
-
-
-
-      <div id="main_box">
-        <span id="title">Latest Items</span>
-             
-              <div id="latest_items_box">
-                 
-                 <header id="latest_items_box_header"></header>
-
-                 <div id="latest_item">
-                     <img src="nadeem.png" />
-                     <div>Our Latest Item</div>
-                     <div>iPhone 6s - 350 <del>500</del></div>
-                     <button type="button">View Item</button>
-                 </div>
-
-                  <div class="offers_boxes">
-                       <img src="nadeem.png" />
-                     <span>iPhone 6s - 350 <del>500</del></span>
-                     <button type="button">View Item</button>
-                  </div> 
-
-                    <div class="offers_boxes">
-                       <img src="nadeem.png" />
-                     <span>iPhone 6s - 350 <del>500</del></span>
-                     <button type="button">View Item</button>
-                  </div> 
-
-                    <div class="offers_boxes">
-                       <img src="nadeem.png" />
-                     <span>iPhone 6s - 350 <del>500</del></span>
-                     <button type="button">View Item</button>
-                  </div> 
-
-                    <div class="offers_boxes">
-                       <img src="nadeem.png" />
-                     <span>iPhone 6s - 350 <del>500</del></span>
-                     <button type="button">View Item</button>
-                  </div> 
-
-                  <div class="offers_boxes">
-                       <img src="nadeem.png" />
-                     <span>iPhone 6s - 350 <del>500</del></span>
-                     <button type="button">View Item</button>
-                  </div> 
-
-                  <div class="offers_boxes">
-                       <img src="nadeem.png" />
-                     <span>iPhone 6s - 350 <del>500</del></span>
-                     <button type="button">View Item</button>
-                  </div> 
-                  <div class="bottom_items_holder">
-                    <div class="offers_boxes">
-                       <img src="nadeem.png" />
-                     <span>iPhone 6s - 350 <del>500</del></span>
-                     <button type="button">View Item</button>
-                  </div> 
- 
-                   <div class="offers_boxes">
-                       <img src="nadeem.png" />
-                     <span>iPhone 6s - 350 <del>500</del></span>
-                     <button type="button">View Item</button>
-                  </div> 
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   <div class="offers_boxes">
-                       <img src="nadeem.png" />
-                     <span>iPhone 6s - 350 <del>500</del></span>
-                     <button type="button">View Item</button>
-                  </div> 
-                    
-
-                  <div class="offers_boxes">
-                       <img src="nadeem.png" />
-                     <span>iPhone 6s - 350 <del>500</del></span>
-                     <button type="button">View Item</button>
-                  </div> 
-
-                  <div class="offers_boxes">
-                       <img src="nadeem.png" />
-                     <span>iPhone 6s - 350 <del>500</del></span>
-                     <button type="button">View Item</button>
-                  </div>
-                  </div>
-             
-               
-             </div>
-      </div>
+      
 
 
 
 
-    </div>
+
+    
     <br><br><br>
     <br><br><br>
         <footer id="bottom_footer"> 

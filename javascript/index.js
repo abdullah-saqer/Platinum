@@ -92,32 +92,27 @@ $(".slick-next").html("");
 $(".slick-next").html('<i class="fa fa-angle-right" ></i>');
 $(".slick-prev").html("");
 $(".slick-prev").html('<i class="fa fa-angle-left" ></i>');
- searchFlag=0;
- $("#search_query").on
- function checkEnter(){
- 	var query=$("#search_query").val();
- 	window.onkeydown=function(e){
-		if(e.keyCode==13)
-				alert(query);
-};
 
+
+ //.on
+ function checkSearch(){
+ 	var s=$("#middle_search_query").val();
+ 	if(!s.length)return;
+ 	alert(s);
  }
- function bringSearchBar(){
- 	searchFlag=!searchFlag;
-  if(searchFlag){
-    $(".search_list").append('&nbsp;<input id="search_query" type="text"  size="25">');
-    $("#search_query").keydown(checkEnter);
-	}
-	else{
-		$(".search_list").html("");
-		$(".search_list").html('<span id="search" class="glyphicon glyphicon-search"></span>');
-		$("#search").click(bringSearchBar);
-	}
- }
-$("#search").click(bringSearchBar);
+
+window.onkeydown=function(e){
+		if(e.keyCode==13)
+			checkSearch();
+};
+ $(".fa-search").click(function(){
+ 	checkSearch();
+ });
 
 $(".scroll_to_top").click(function(){
 	$("html,body").animate({scrollTop:0},'normal');
 });
+
+
 
 });
