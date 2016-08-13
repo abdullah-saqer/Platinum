@@ -360,7 +360,7 @@ require("functions/engine.php");
          
       </div>
 
-     <center><div id="copy_right">All Rights Reserved &copy; Platinum-jo 2016 .</div></center>
+     <div id="copy_right">All Rights Reserved &copy; Platinum-jo 2016 .</div>
 
     </footer>
 

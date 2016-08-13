@@ -164,12 +164,6 @@ function printNavBar(){
             
       echo'</ul>
         </li>
-        <li>
-            <a class="search_list">
-            <span id="search" class="glyphicon glyphicon-search"></span>
-
-        	</a>
-        </li>
       </ul>
 
     </div>
@@ -178,9 +172,9 @@ function printNavBar(){
   <div class="cart_info">(0)Items | 00.00JD</div>
   </i>
   <span id="arabic_label"><a href="#">Arabic</a></span>
-  <div id="middle_search">
+  <span id="middle_search">
   <input placeholder="Search.." id="middle_search_query" type="text"/>
-  <i style="font-size:15px;position:relative;left:-25px;color:rgba(180,180,180,1);" class="fa fa-search"></i></div>
+  <i style="font-size:15px;position:relative;left:-25px;color:rgba(180,180,180,1);" class="fa fa-search"></i></span>
   <div id="nav_down_section">
   </div>
   
