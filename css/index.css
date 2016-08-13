@@ -234,7 +234,6 @@ z-index: 5;
   top:30px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-
   padding-top: 1px;
   padding-bottom: 5px;
   font-size:16pt;
@@ -251,8 +250,7 @@ z-index: 5;
 }
 .thumbnail img{
   width:300px;
-  max-width:240px;
-  max-height: 150px;
+//  max-height: 150px;
 }
 .slick-next{
    font-size:55px;
@@ -310,7 +308,7 @@ z-index: 5;
   background-color: white;
   transition:background-color 0.7s;
   display: none;
-   z-index: 100;
+  z-index: 100;
 }
 .scroll_to_top:hover{
   border:0px solid rgba(0,0,0,0.2);
@@ -325,6 +323,7 @@ z-index: 5;
   top:3px;
   font-size: 44px;
   z-index: 100;
+  left:2px;
 }
 #cart{
   position: absolute;

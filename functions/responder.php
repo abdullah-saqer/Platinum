@@ -92,8 +92,9 @@ $category=$_POST['category'];
 $offer=$_POST['item_offer'];
 $new_price=$_POST['item_new_price'];
 $description=$_POST['description'];
+$brand=$_POST['brand'];
 $admin=getUsername();
-$query="INSERT INTO `items`(`id`, `name`, `cat_id`, `price`, `new_price`, `offer`, `description`, `added_by`, `quantity`) VALUES ('','$name','$category','$price','$new_price','$offer','$description','$admin','$quantity')";
+$query="INSERT INTO `items`(`id`, `name`, `cat_id`, `price`, `new_price`, `offer`, `description`, `added_by`, `quantity`, `brand`) VALUES ('','$name','$category','$price','$new_price','$offer','$description','$admin','$quantity','$brand')";
 	if($GLOBALS['conn']->query($query))
 		echo "1";
 	else echo mysql_error();
@@ -121,6 +122,7 @@ if(isset($_POST['getItemData']) && ($_POST['getItemData'])){
 		$info[]=$r["offer"];
 		$info[]=$r["description"];
 		$info[]=$r["quantity"];
+		$info[]=$r["brand"];
 	}
 	echo json_encode($info);
 }
@@ -133,8 +135,9 @@ $category=$_POST['category'];
 $offer=$_POST['offer'];
 $new_price=$_POST['new_price'];
 $description=$_POST['description'];
+$brand=$_POST['brand'];
 $key=$_POST['key'];
-$query="UPDATE `items` SET `name`='$name',`cat_id`='$category',`price`='$price',`new_price`='$new_price',`offer`='$offer',`description`='$description',`quantity`='$quantity' WHERE id='$key'";
+$query="UPDATE `items` SET `name`='$name',`cat_id`='$category',`price`='$price',`new_price`='$new_price',`offer`='$offer',`description`='$description',`quantity`='$quantity',`brand`='$brand' WHERE id='$key'";
 	if($GLOBALS['conn']->query($query))
 		echo "Item Updated";
 	else mysql_error();

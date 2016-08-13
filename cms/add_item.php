@@ -96,6 +96,12 @@
 						  <input id="new_price" class="pure-u-23-24" type="text" disabled>
 						</td>
 				</tr>
+				<tr>
+					<td>Brand</td>
+					<td>
+					  <input id="brand" type="text">
+					</td>
+				</tr>
 			</table>
 			<!--    -->
 			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -274,6 +280,10 @@
 						<td>
 						  <input id="new_price2" class="pure-u-23-24" type="text" disabled>
 						</td>
+				</tr>
+				<tr>
+					<td>Brand</td>
+					<td><input id="Brand2" type="text"></td>
 				</tr>
 			</table>
 			<!--    -->

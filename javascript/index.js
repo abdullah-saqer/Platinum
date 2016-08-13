@@ -24,7 +24,7 @@ $(document).ready(function(){
 				$("#cart").animate({"left":"96%","top":"110px","fontSize":"35px"});
 				$(".scroll_to_top").fadeOut();
 				$("#arabic_label").fadeIn();
-				$(".cart_info").css({"left":"-200px"});
+				$(".cart_info").css({"left":"-255px"});
 				$("#search").fadeOut();
 				$("#search_query").fadeOut('fast');
 				$("#middle_search").animate({"top":"-30px"});
