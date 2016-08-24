@@ -8,7 +8,12 @@ $(document).ready(function(){
 			$("#logo_logo_logo").fadeOut("fast");
 			$("#logo_logo").fadeIn("fast");
 			$("#nav_down_section").css({"display":"none"});
-			$("#cart").animate({"left":"15%","top":"10px","fontSize":"25px"});
+			var left_cart_animation="15%";
+			  if($(window).width()<700)
+			  		left_cart_animation="28%";
+
+			$("#cart").animate({"left":left_cart_animation,"top":"10px","fontSize":"25px"});
+
 			$(".scroll_to_top").fadeIn();
 			$("#arabic_label").fadeOut();
 			$(".cart_info").css({"left":"5px"});
@@ -21,7 +26,9 @@ $(document).ready(function(){
 				$("#logo_logo").fadeOut("fast");
 				$("#logo_logo_logo").fadeIn("fast");
 				$("#nav_down_section").css({"display":"block"});
-				$("#cart").animate({"left":"96%","top":"110px","fontSize":"35px"});
+					if($(window).width()<700)
+						$("#cart").animate({"left":"88%","top":"110px","fontSize":"35px"});
+						else $("#cart").animate({"left":"96%","top":"110px","fontSize":"35px"});
 				$(".scroll_to_top").fadeOut();
 				$("#arabic_label").fadeIn();
 				$(".cart_info").css({"left":"-255px"});
@@ -114,5 +121,8 @@ $(".scroll_to_top").click(function(){
 });
 
 
+$("#cart").click(function(){
+	alert($(window).width());
+});
 
 });
