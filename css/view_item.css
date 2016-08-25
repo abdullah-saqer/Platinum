@@ -153,18 +153,15 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-:focus{
-  outline:none;
-}
 
-#drop_dwon_button:focus + #drop_donw_menu_content{
+#drop_dwon_button:hover + #drop_donw_menu_content{
   display:block;
 }
-
+/*
 #drop_donw_menu_content:hover{
   display:block;
 }
-
+*/
 #content_section{
   margin-top:10px;
   display:-webkit-box; display:-moz-box;
