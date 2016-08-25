@@ -2,7 +2,6 @@
 <?php
 require("functions/connect.php");
 require("functions/engine.php");
-//Nadeem
 ?>
 <html lang="en">  
 <head>
@@ -195,13 +194,14 @@ require("functions/engine.php");
              </div>        
         
         </div>
+             
+      </div>
 
      </div>
-
-     </div>
-  
-
   </div>
+         
+               
+  
 
 <footer id="bottom_footer"> 
      
