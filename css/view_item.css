@@ -154,7 +154,7 @@
 }
 
 
-#drop_dwon_button:hover + #drop_donw_menu_content{
+#drop_dwon_button:focus ~ #drop_donw_menu_content{
   display:block;
 }
 /*
