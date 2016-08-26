@@ -336,6 +336,7 @@ z-index: 5;
 }
 #cart:hover{
   cursor: pointer;
+  color:white;
 }
 .cart_info{
   position: relative;
@@ -389,7 +390,7 @@ z-index: 5;
     height:430px;
     background-color:white;
     top:0px; position:relative;
-   transition: box-shadow 800ms , top 300ms;
+    transition: box-shadow 800ms , top 300ms;
   }
 
   #latest_items_table tr td[rowspan="2"] #td_content:hover{
@@ -542,7 +543,16 @@ z-index: 5;
        display:none;
     }
     #cart{
-      left:88%;
+      margin-left: 50px;
+    }
+    #login_header i{
+      margin-left: 70px;
+    }
+    #usr{
+     visibility: hidden;
+    }
+    #pwd{
+     visibility: hidden;
     }
     .scroll_to_top{
       left:90%;
@@ -683,7 +693,46 @@ cursor: pointer;
   #subscribe_section{
    margin:20px 20px 20px 80px;
 }
-
    
 }
+#login_header{
+  position: absolute;
+  left:55%;
+  top:70%;
+  display: inline-block;
+  white-space: nowrap;
+}
+#login_header input,i{
+  display: inline-block;
+
+}
+#login_header i{
+  color:rgba(255,255,255,0.9);
+  font-size: 33px
+}
+#login_header i:hover{
+  color:white;
+  cursor: pointer;
+}
+#pwd{
+  width:200px;
+  position: relative;
+  height: 30px;
+  top:-5px;
+  background-color: rgb(50,50,50);
+  border-color:rgb(50,50,50);
+}
+#usr{
+  width:200px;
+  position: relative;
+  height: 30px;
+  top:-5px;
+  background-color: rgb(50,50,50);
+  border-color:rgb(50,50,50);
+
+}
+
+
+
+
 

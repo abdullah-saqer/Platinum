@@ -9,6 +9,7 @@ require("functions/engine.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="css/animate_css.css">
     <title>Platinum</title>
 </head>
 <body style="padding:0px; margin:0px;font-family:Arial, sans-serif">

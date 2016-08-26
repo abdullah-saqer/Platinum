@@ -8,17 +8,20 @@ $(document).ready(function(){
 			$("#logo_logo_logo").fadeOut("fast");
 			$("#logo_logo").fadeIn("fast");
 			$("#nav_down_section").css({"display":"none"});
-			var left_cart_animation="15%";
+			var left_cart_animation="17%";
 			  if($(window).width()<700)
 			  		left_cart_animation="28%";
 
 			$("#cart").animate({"left":left_cart_animation,"top":"10px","fontSize":"25px"});
-
 			$(".scroll_to_top").fadeIn();
 			$("#arabic_label").fadeOut();
 			$(".cart_info").css({"left":"5px"});
 			$("#search").fadeIn('fast');
 			$("#middle_search").animate({"top":"-40px"});
+			$("#login_header").animate({"left":"13%","top":"18%"});
+			$("#pwd").css({'display':'none'});
+			$("#usr").css({'display':'none'});
+			$("#login_header i").css({"fontSize":"25px"});
 			navFlag=!navFlag;
 		}
 		else if(scrollVal<100 && navFlag){
@@ -35,6 +38,10 @@ $(document).ready(function(){
 				$("#search").fadeOut();
 				$("#search_query").fadeOut('fast');
 				$("#middle_search").animate({"top":"-30px"});
+				$("#login_header").animate({"left":"55%","top":"70%"});
+				$("#pwd").css({'display':'inline-block'});
+				$("#usr").css({'display':'inline-block'});
+				$("#login_header i").css({"fontSize":"33px"});
 				navFlag=!navFlag;
 				
 			}
@@ -125,4 +132,17 @@ $("#cart").click(function(){
 	alert($(window).width());
 });
 
+$("#login_header i").hover(function(){
+	$("#login_header i").addClass("animated jello");
+	setTimeout(function(){
+	 $("#login_header i").removeClass("animated jello");
+		 },1000);
 });
+
+$("#login_header i").click(function(){
+$('.login_information_holder').slideUp();
+
+});
+
+
+

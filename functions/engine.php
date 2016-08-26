@@ -171,6 +171,16 @@ function printNavBar(){
   <i title="Cart" id="cart" class="fa fa-shopping-cart">
   <div class="cart_info">(0)Items | 00.00JD</div>
   </i>
+  <div id="login_header">
+  		<span class="login_information_holder">
+      		<input placeholder="Username" type="text" class="form-control" id="usr">
+		  	
+		  	<input placeholder="Password" type="password" class="form-control" id="pwd">
+		 </span>
+  	<a href="#">
+  		<i title="Login" class="fa fa-user"></i>
+  	</a>
+  </div>
   <span id="arabic_label"><a href="#">Arabic</a></span>
   <span id="middle_search">
   <input placeholder="Search.." id="middle_search_query" type="text"/>
