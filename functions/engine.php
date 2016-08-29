@@ -174,13 +174,12 @@ function printNavBar(){
   <div id="login_header">
   		<span class="login_information_holder">
       		<input placeholder="Username" type="text" class="form-control" id="usr">
-		  	
 		  	<input placeholder="Password" type="password" class="form-control" id="pwd">
 		 </span>
-  	<a href="#">
-  		<i title="Login" class="fa fa-user"></i>
-  	</a>
   </div>
+	 <a href="#">
+  		<i title="Login" id="login_header_bar_icon" class="fa fa-user"></i>
+  	</a>
   <span id="arabic_label"><a href="#">Arabic</a></span>
   <span id="middle_search">
   <input placeholder="Search.." id="middle_search_query" type="text"/>
@@ -192,10 +191,54 @@ function printNavBar(){
 </nav>';
 }
 
+function printFooter(){
+echo'
+<footer id="bottom_footer"> 
+     
+      <table id="footer_lists_table">
+        <tr>
+          <td>
+            <ul> <span>Nadeem Salah</span>
+                <li><a href="#">List item 1 wewewewew</a></li>
+                <li><a href="#">List item 2wewewewew</a></li>
+                <li><a href="#">List item 3wewewewewe</a></li>
+                <li><a href="#">List item 4wewewewe</a></li>
+            </ul>
+          </td>
+           <td>
+            <ul>  <span>Montaser Qasem</span>
+                <li><a href="#">List item 1ewewewewe</a></li>
+                <li><a href="#">List item 2wewewewe</a></li>
+                <li><a href="#">List item 3wewewewewe</a></li>
+                <li><a href="#">List item 4wewewewewewewe</a></li>
+            </ul>
+          </td>
+            <td>
+            <ul> <span>Ahmad Wewewe</span>
+                <li><a href="#">List item 1wewewewewewewe</a></li>
+                <li><a href="#">List item 2wewewewewe</a></li>
+                <li><a href="#">List item 3wewewewewewe</a></li>
+                <li><a href="#">List item 4ewewewewewewe</a></li>
+            </ul>
+          </td>
+        </tr>
+      </table>
 
+      <div id="subscribe_section">
+         <p>Subscribe to the dark side</p>
+        <form action="#" method="POST" id="subscribe_from">
+               
+          <input type="email" name="subscriber_email" id="subscriber_email" placeholder="put your E-mail to get our lastest offers.">
+          <input type="submit" value="Subscribe">
+            
+        </form>
+         
+      </div>
 
-/*
+     <div id="copy_right">All Rights Reserved &copy; Platinum-jo (2016) .</div>
 
+    </footer>
+';
 
-*/
+}
 ?>

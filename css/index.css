@@ -332,7 +332,7 @@ z-index: 5;
   left:95%;
   width:50px;
   height: 40px;
-  top:110px;
+  top:65%;
 }
 #cart:hover{
   cursor: pointer;
@@ -697,20 +697,25 @@ cursor: pointer;
 }
 #login_header{
   position: absolute;
-  left:55%;
+  left:70%;
   top:70%;
-  display: inline-block;
   white-space: nowrap;
+  display: none;
+  
 }
 #login_header input,i{
   display: inline-block;
 
 }
-#login_header i{
+#login_header_bar_icon{
   color:rgba(255,255,255,0.9);
-  font-size: 33px
+  font-size: 33px;
+  float: right;
+  position: absolute;
+  left:90%;
+  top:65%;
 }
-#login_header i:hover{
+#login_header_bar_icon:hover{
   color:white;
   cursor: pointer;
 }
@@ -721,6 +726,7 @@ cursor: pointer;
   top:-5px;
   background-color: rgb(50,50,50);
   border-color:rgb(50,50,50);
+  display: none;
 }
 #usr{
   width:200px;
@@ -729,9 +735,8 @@ cursor: pointer;
   top:-5px;
   background-color: rgb(50,50,50);
   border-color:rgb(50,50,50);
-
+  display: none;
 }
-
 
 
 

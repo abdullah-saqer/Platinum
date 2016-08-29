@@ -7,18 +7,21 @@ require("functions/engine.php");
 <head>
     <meta charset="utf-8">
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="javascript/index.js"></script>
-     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    
+    <script type="text/javascript" src="javascript/header_bar.js"></script>
+
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/view_item.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <!-- #endregion Jssor Slider End -->
     <title>Platinum</title>
-    <link rel="stylesheet" type="text/css" href="css/view_item.css">
-    <?php printNavBar();?>
+    
+    
 </head>
 <body>
+  <?php printNavBar();?>
     
      <span><br><br><br><br><br><br><br><br></span>
     
@@ -489,51 +492,7 @@ require("functions/engine.php");
       </div>
     </div>
 
-<footer id="bottom_footer"> 
-     
-      <table id="footer_lists_table">
-        <tr>
-          <td>
-            <ul> <span>Nadeem Salah</span>
-                <li><a href="#">List item 1 wewewewew</a></li>
-                <li><a href="#">List item 2wewewewew</a></li>
-                <li><a href="#">List item 3wewewewewe</a></li>
-                <li><a href="#">List item 4wewewewe</a></li>
-            </ul>
-          </td>
-           <td>
-            <ul>  <span>Montaser Qasem</span>
-                <li><a href="#">List item 1ewewewewe</a></li>
-                <li><a href="#">List item 2wewewewe</a></li>
-                <li><a href="#">List item 3wewewewewe</a></li>
-                <li><a href="#">List item 4wewewewewewewe</a></li>
-            </ul>
-          </td>
-            <td>
-            <ul> <span>Ahmad Wewewe</span>
-                <li><a href="#">List item 1wewewewewewewe</a></li>
-                <li><a href="#">List item 2wewewewewe</a></li>
-                <li><a href="#">List item 3wewewewewewe</a></li>
-                <li><a href="#">List item 4ewewewewewewe</a></li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-
-      <div id="subscribe_section">
-         <p>Subscribe to the dark side</p>
-        <form action="#" method="POST" id="subscribe_from">
-               
-          <input type="email" name="subscriber_email" id="subscriber_email" placeholder="put your E-mail to get our lastest offers.">
-          <input type="submit" value="Subscribe">
-            
-        </form>
-         
-      </div>
-
-     <div id="copy_right">All Rights Reserved &copy; Platinum-jo (2016) .</div>
-
-    </footer>
+<?php printFooter();?>
 
 </body>
 </html>
