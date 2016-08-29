@@ -139,10 +139,8 @@ $("#login_header i").hover(function(){
 		 },1000);
 });
 
-$("#login_header i").click(function(){
-$('.login_information_holder').slideUp();
+
 
 });
-
 
 
