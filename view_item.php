@@ -28,39 +28,12 @@ require("functions/engine.php");
      <div id="container">
         
         <div id="left_side">
+
+          <?php printCategoriesLeftBox(); ?>
+          <?php printFilterBrandLeftBox(); ?>
+          <?php printMoreFilterLeftBox(); ?>
             
-            <div id="ctgs_box">
-               <div id="title">categories</div>
-               <table id="ctgs_box_table">
-                 <tr><td><a href="#">Laptops</a></td></tr>
-                 <tr><td><a href="#">Mobiles</a></td></tr>
-               </table>
-            </div>
             
-            <div id="fbb_box">
-              <div id="title">Filter By Brand</div>
-              <table id="fbb_box_table">
-                 <tr><td><a href="#">item1</a></td></tr>
-                 <tr><td><a href="#">item3</a></td></tr>
-                 <tr><td><a href="#">item4</a></td></tr>
-                 <tr><td><a href="#">item5</a></td></tr>
-                 <tr><td><a href="#">item6</a></td></tr>
-                 <tr><td><a href="#">item7</a></td></tr>
-                 <tr><td><a href="#">item8</a></td></tr>
-                 <tr><td><a href="#">item9</a></td></tr>
-                 <tr><td><a href="#">item10</a></td></tr>
-               </table>
-            </div>
-            
-            <div id="mf_box">
-               <div id="title">More Filters</div>
-              <table id="mf_box_table">
-                 <tr><td><a href="#">item1</a></td></tr>
-                 <tr><td><a href="#">item3</a></td></tr>
-                 <tr><td><a href="#">item4</a></td></tr>
-                 <tr><td><a href="#"></a></td></tr>
-               </table>
-            </div>
         
         </div> 
         
