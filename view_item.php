@@ -29,11 +29,11 @@ require("functions/engine.php");
         
         <div id="left_side">
 
-          <?php printCategoriesLeftBox(); ?>
-          <?php printFilterBrandLeftBox(); ?>
-          <?php printMoreFilterLeftBox(); ?>
-            
-            
+          <?php 
+            printCategoriesLeftBox(); 
+            printFilterBrandLeftBox();
+            printMoreFilterLeftBox();
+          ?> 
         
         </div> 
         
@@ -45,22 +45,7 @@ require("functions/engine.php");
                     <a href="#">Laptops</a> >
                      <a href="#">Lenovo ideapad</a> >
                       <a href="#">Flex 15</a>
-                   
                  </nav>
-                 <!--
-                 <div id="search_field">
-                   <i class="fa fa-search" style="font-size:13px"></i>
-                   <input type="search" placeholder="search item .." />
-                </div>
-                <div id="order_section">
-                     <button type="button" id="drop_dwon_button">Order By</button>
-                     <div id="drop_donw_menu_content" >
-                       <a href="#">Manufacture</a>
-                       <a href="#">Price</a>
-                       <a href="#">Fuck me</a>
-                     </div>
-                </div>
-                -->
              </div>
 
              <div id="content_section">

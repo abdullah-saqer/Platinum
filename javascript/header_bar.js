@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 			$("#cart").animate({"left":left_cart_animation,"top":"10px","fontSize":"25px"});
 			$(".scroll_to_top").fadeIn();
-			$("#arabic_label").fadeOut();
+			$("#arabic_label").css({"display":"none"});
 			$(".cart_info").css({"left":"5px"});
 			$("#search").fadeIn('fast');
 			$("#middle_search").animate({"top":"-40px"});
@@ -32,7 +32,7 @@ $(document).ready(function(){
 						$("#cart").animate({"left":"88%","top":"65%","fontSize":"35px"});
 						else $("#cart").animate({"left":"96%","top":"65%","fontSize":"35px"});
 				$(".scroll_to_top").fadeOut();
-				$("#arabic_label").fadeIn();
+				$("#arabic_label").css({"display":"block"});
 				$(".cart_info").css({"left":"-255px"});
 				$("#search").fadeOut();
 				$("#search_query").fadeOut('fast');
@@ -83,12 +83,12 @@ $("#login_header_bar_icon").click(function(){
 	if(!flag_header_login){
 		$(function () {
 		box.fadeIn();
-		box.animate({"left":"55%"},{queue:false});
+		box.animate({"left":"50%"},{queue:false});
 		});
 	}
 	else{
 		$(function () {
-		box.animate({"left":"70%"},{queue:false});
+		box.animate({"left":"60%"},{queue:false});
 		box.fadeOut("slow");
 		});
 	}

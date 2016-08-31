@@ -278,7 +278,6 @@ z-index: 5;
 }
 #arabic_label{
   position: absolute;
-  top:14px;
   margin-left: 10px;
   margin-right: 10px;
   color:white;
@@ -286,8 +285,11 @@ z-index: 5;
   font-size: 15px;
   text-decoration: none;
   bottom:0px;
-  top:120px;
-  display: none;
+  top:129px;
+  display: block;
+}
+#arabic_label img{
+  width: 22px;
 }
 #arabic_label a{
   color:white;
@@ -295,7 +297,6 @@ z-index: 5;
 }
 #arabic_label:hover{
   cursor: pointer;
-  text-decoration: underline;
 }
 .scroll_to_top{
   width: 35px;
@@ -697,7 +698,7 @@ cursor: pointer;
 }
 #login_header{
   position: absolute;
-  left:70%;
+  left:60%;
   top:70%;
   white-space: nowrap;
   display: none;
@@ -737,6 +738,20 @@ cursor: pointer;
   border-color:rgb(50,50,50);
   display: none;
 }
-
+.login_header_button {
+    background-color: rgba(255,70,70,0.9);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-border-radius: 5px;
+    border: none;
+    padding: 6px 16px 6px 16px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #949494;
+    position: relative;
+    bottom: 6px;
+}
+.login_header_button:hover {
+    background-color:rgba(220,40,40,1);
+}
 
 

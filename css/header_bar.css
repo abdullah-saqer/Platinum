@@ -125,7 +125,7 @@
   text-decoration: none;
   bottom:0px;
   top:120px;
-  display: none;
+  display: block;
 }
 #arabic_label a{
   color:white;
@@ -133,7 +133,9 @@
 }
 #arabic_label:hover{
   cursor: pointer;
-  text-decoration: underline;
+}
+#arabic_label img{
+  width: 22px;
 }
 .scroll_to_top{
   width: 35px;
@@ -266,3 +268,19 @@
 #search{
   display: none;
 }
+.login_header_button {
+    background-color: rgba(255,70,70,0.9);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-border-radius: 5px;
+    border: none;
+    padding: 6px 16px 6px 16px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #949494;
+    position: relative;
+    bottom: 6px;
+}
+.login_header_button:hover {
+    background-color:rgba(220,40,40,1);
+}
+

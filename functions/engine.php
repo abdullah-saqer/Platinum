@@ -173,14 +173,21 @@ function printNavBar(){
   </i>
   <div id="login_header">
   		<span class="login_information_holder">
-      		<input placeholder="Username" type="text" class="form-control" id="usr">
+        <button class="login_header_button">Login</button>
+      	<input placeholder="Username" type="text" class="form-control" id="usr">
 		  	<input placeholder="Password" type="password" class="form-control" id="pwd">
 		 </span>
   </div>
 	 <a href="#">
   		<i title="Login" id="login_header_bar_icon" class="fa fa-user"></i>
   	</a>
-  <span id="arabic_label"><a href="#">Arabic</a></span>
+
+  <span id="arabic_label">
+  <a href="#">
+  <img title="Arabic" src="images/jordan_flag.png" />
+  </a>
+  </span>
+
   <span id="middle_search">
   <input placeholder="Search.." id="middle_search_query" type="text"/>
   <i style="font-size:15px;position:relative;left:-25px;color:rgba(180,180,180,1);" class="fa fa-search"></i></span>
