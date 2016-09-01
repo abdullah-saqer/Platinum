@@ -167,14 +167,14 @@ else mysql_error();
 //makePrimary
 
 if(isset($_GET['makePrimary']) && ($_GET['makePrimary'])){
-$key=$_GET['key'];
-$photo_key=$_GET['photo_key'];
-$query0="UPDATE `photos` SET `primary_photo`=false WHERE item_id='$photo_key'";
-$GLOBALS['conn']->query($query0);
-$query="UPDATE `photos` SET `primary_photo`=true WHERE id='$key'";
-if($GLOBALS['conn']->query($query))
-	echo "Done";
-else mysql_error();
+	$key=$_GET['key'];
+	$photo_key=$_GET['photo_key'];
+	$query0="UPDATE `photos` SET `primary_photo`=false WHERE item_id='$photo_key'";
+	$GLOBALS['conn']->query($query0);
+	$query="UPDATE `photos` SET `primary_photo`=true WHERE id='$key'";
+	if($GLOBALS['conn']->query($query))
+		echo "Done";
+	else mysql_error();
 }
 //--- get items by category
 if(isset($_POST['getItemsWithCategory']) && ($_POST['getItemsWithCategory'])){

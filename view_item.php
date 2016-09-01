@@ -14,7 +14,9 @@ require("functions/engine.php");
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate_css.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    
+    <script type="text/javascript" src="javascript/elevateZoom/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="javascript/elevateZoom/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="javascript/elevateZoom/jquery.elevateZoom-3.0.8.min.js"></script>
     <!-- #endregion Jssor Slider End -->
     <title>Platinum</title>
     <link rel="stylesheet" type="text/css" href="css/view_item.css">

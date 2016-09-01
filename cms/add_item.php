@@ -192,7 +192,8 @@
 			   die(print("0"));
 
 			$query="SELECT * FROM photos";
-			$num=mysql_num_rows(mysql_query($query));
+			$result=$GLOBALS['conn']->query($query);
+			$num=mysqli_num_rows($result);
 			$name=$num+1;
 			$name.=".".$val;
 		if(!(empty($_POST['primary_key'])) && $_FILES['file']['error'][$key]==0 && move_uploaded_file($_FILES['file']['tmp_name'][$key],'../items_photos/'.$name)){
@@ -200,7 +201,7 @@
 			$key=$_POST['primary_key'];
 			$path='items_photos/'.$name;
 			$query="INSERT INTO `photos`(`id`, `item_id`, `photo_path`, `photo_name`) VALUES ('','$key','$path','$name')";
-			mysql_query($query);
+			$GLOBALS['conn']->query($query);
 		}
 	}
 	if(!empty($_POST['ajax']))

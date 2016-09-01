@@ -99,15 +99,9 @@ background-color: rgba(233,233,233,0.6);
 	transition-duration:0.3s,0.3s;
 	overflow: none;
 }
-#item_token:hover{
-top:-10px;
--webkit-box-shadow: 2px 10px 34px -5px rgba(0,0,0,0.75);
--moz-box-shadow: 2px 10px 34px -5px rgba(0,0,0,0.75);
-box-shadow: 2px 10px 34px -5px rgba(0,0,0,0.75);
-}
 #item_photo{
 	border-bottom: 1px solid rgba(0,0,0,0.5);
-	width: 380px;
+	width: 300px;
 	height: 300px;
 	position: relative;
 	top:2px;
@@ -119,10 +113,6 @@ box-shadow: 2px 10px 34px -5px rgba(0,0,0,0.75);
 	transition: all 0.5s ease, top 1s;
 	top:0px;
 
-}
-#item_photo img:hover{
-	transform:scale(1.07);
-	top:-10px;
 }
 #bottom_container{
 	width:380px;
