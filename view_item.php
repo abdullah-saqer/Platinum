@@ -14,9 +14,8 @@ require("functions/engine.php");
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate_css.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="javascript/elevateZoom/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="javascript/elevateZoom/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="javascript/elevateZoom/jquery.elevateZoom-3.0.8.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.imageLens.js"></script>
+    <script type="text/javascript" src="javascript/view_item.js"></script>
     <!-- #endregion Jssor Slider End -->
     <title>Platinum</title>
     <link rel="stylesheet" type="text/css" href="css/view_item.css">
@@ -56,12 +55,23 @@ require("functions/engine.php");
                   </div>
                   <div id="content_box">
                      <div id="item_picture_boxes">
-                          <table>
-                             <tr><td colspan="3"><img src="nadeem.png"></td></tr>
+                          <table><!-- Master photo -->
+                                 <tr>
+                                  <td colspan="3">
+                                    <img src="nadeem.png" id="primary_photo" >
+                                    <script type="text/javascript">
+                                      $('#primary_photo').imageLens({
+                                        lensSize:200,
+                                        borderColor:"#b3b3ff"
+                                      });
+                                    </script>
+                                  </td>
+                                </tr>
+                                <!-- -->
                              <tr>
-                               <td><img src="nadeem.png"></td>
-                                <td><img src="nadeem.png"></td>
-                                 <td><img src="nadeem.png"></td>
+                               <td id="photo_clickable"><img src="nadeem.png"></td>
+                                <td id="photo_clickable"><img src="nadeem.png"></td>
+                                 <td id="photo_clickable"><img src="nadeem.png"></td>
                              </tr>
                              <tr>
                                <td><img src="nadeem.png"></td>

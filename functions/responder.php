@@ -93,8 +93,9 @@ $offer=$_POST['item_offer'];
 $new_price=$_POST['item_new_price'];
 $description=$_POST['description'];
 $brand=$_POST['brand'];
+$productCode=$_POST['productCode'];
 $admin=getUsername();
-$query="INSERT INTO `items`(`id`, `name`, `cat_id`, `price`, `new_price`, `offer`, `description`, `added_by`, `quantity`, `brand`) VALUES ('','$name','$category','$price','$new_price','$offer','$description','$admin','$quantity','$brand')";
+$query="INSERT INTO `items`(`id`, `name`, `cat_id`, `price`, `new_price`, `offer`, `description`, `added_by`, `quantity`, `brand`, `productCode`) VALUES ('','$name','$category','$price','$new_price','$offer','$description','$admin','$quantity','$brand','$productCode')";
 	if($GLOBALS['conn']->query($query))
 		echo "1";
 	else echo mysql_error();
@@ -104,9 +105,18 @@ $query="INSERT INTO `items`(`id`, `name`, `cat_id`, `price`, `new_price`, `offer
 if(isset($_POST['deleteItem']) && ($_POST['deleteItem'])){
 	$key=$_POST['key'];
 	$query="DELETE FROM items WHERE id='$key'";
-	if($GLOBALS['conn']->query($query))
+	$query2="DELETE FROM photos WHERE item_id='$key'";
+	$query3="SELECT * FROM photos";
+	$result=$GLOBALS['conn']->query($query3);
+
+	while ($r=$result->fetch_assoc())
+		unlink("../".$r["photo_path"]);
+
+	if($GLOBALS['conn']->query($query) && $GLOBALS['conn']->query($query2))
 		echo "Item deleted";
+	
 	else  mysql_error();
+	//IMPORTANT----TO DO --> DELETE ALL THE PHOTOS FOR THIS ITEM
 }
 //--Getting item information
 if(isset($_POST['getItemData']) && ($_POST['getItemData'])){
@@ -123,6 +133,7 @@ if(isset($_POST['getItemData']) && ($_POST['getItemData'])){
 		$info[]=$r["description"];
 		$info[]=$r["quantity"];
 		$info[]=$r["brand"];
+		$info[]=$r["productCode"];
 	}
 	echo json_encode($info);
 }
@@ -136,8 +147,9 @@ $offer=$_POST['offer'];
 $new_price=$_POST['new_price'];
 $description=$_POST['description'];
 $brand=$_POST['brand'];
+$productCode=$_POST['productCode'];
 $key=$_POST['key'];
-$query="UPDATE `items` SET `name`='$name',`cat_id`='$category',`price`='$price',`new_price`='$new_price',`offer`='$offer',`description`='$description',`quantity`='$quantity',`brand`='$brand' WHERE id='$key'";
+$query="UPDATE `items` SET `name`='$name',`cat_id`='$category',`price`='$price',`new_price`='$new_price',`offer`='$offer',`description`='$description',`quantity`='$quantity',`brand`='$brand' ,`productCode`='$productCode'  WHERE id='$key'";
 	if($GLOBALS['conn']->query($query))
 		echo "Item Updated";
 	else mysql_error();
@@ -160,6 +172,11 @@ if(isset($_POST['getItemPhotos']) && ($_POST['getItemPhotos'])){
 if(isset($_GET['delete_item_photo']) && ($_GET['delete_item_photo'])){
 $key=$_GET['key'];
 $query="DELETE FROM photos where id='$key'";
+$query2="SELECT * FROM photos";
+$result=$GLOBALS['conn']->query($query2);
+while($r=$result->fetch_assoc())
+	unlink("../".$r["photo_path"]);
+
 if($GLOBALS['conn']->query($query))
 	echo "Photo Deleted";
 else mysql_error();

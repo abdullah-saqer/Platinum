@@ -37,17 +37,19 @@ $("#add_item_submit_button").click(function(){
 	var item_offer=$("#offer_list").val();
 	var item_new_price="";
 	var Brand=$("#brand").val();
+	var productCode=$("#productCode").val();
 	var description=($('#edit').froalaEditor('html.get'));
 	if(item_offer==1)
 		item_new_price=$("#new_price").val();
-	if(!Brand.length || !item_name.length || !item_price.length || !quantity.length || !category.length || (item_offer==1 && !item_new_price.length) || !description.length){
+
+	if(!productCode.length || !Brand.length || !item_name.length || !item_price.length || !quantity.length || !category.length || (item_offer==1 && !item_new_price.length) || !description.length){
 		alert("WARNING: Please fill All fields");
 		return;
 	}
 	$.ajax({
 		type:'POST',
 		url:'../functions/responder.php',
-		data:'addNewItem=1&item_name='+item_name+'&item_price='+item_price+'&quantity='+quantity+'&category='+category+'&item_offer='+item_offer+'&item_new_price='+item_new_price+'&description='+description+'&brand='+Brand,
+		data:'addNewItem=1&item_name='+item_name+'&item_price='+item_price+'&quantity='+quantity+'&category='+category+'&item_offer='+item_offer+'&item_new_price='+item_new_price+'&description='+description+'&brand='+Brand+"&productCode="+productCode,
 		success:function(result){
 			if(result==1){
 				alert("Item "+item_name+" Added successfully");
@@ -97,6 +99,7 @@ $("#edit_item*").click(function(){
 			$('#edit2').froalaEditor('html.set', info[5]);
 			$("#form_number2").attr("value",info[6]);
 			$("#Brand2").val(info[7]);
+			$("#productCode2").val(info[8]);
 		}
 	});
 
@@ -117,15 +120,16 @@ $("#add_item_submit_button2").click(function(){
 	var new_price=$("#new_price2").val();
 	var description=($('#edit2').froalaEditor('html.get'));
 	var Brand=$("#Brand2").val();
+	var productCode=$("#productCode2").val();
 	var key=$("#key_holder").text();
-	if(!Brand.length || !name.length || !price.length || !quantity.length || !category.length || (offer==1 && !new_price.length) || !description.length){
+	if(!productCode.length || !Brand.length || !name.length || !price.length || !quantity.length || !category.length || (offer==1 && !new_price.length) || !description.length){
 		alert("Please Fill all fields");
 		return;
 	}
 	$.ajax({
 		type:'POST',
 		url:'../functions/responder.php',
-		data:'updatItem=1&key='+key+'&name='+name+'&price='+price+'&quantity='+quantity+'&category='+category+'&offer='+offer+'&new_price='+new_price+'&description='+description+'&brand='+Brand,
+		data:'updatItem=1&key='+key+'&name='+name+'&price='+price+'&quantity='+quantity+'&category='+category+'&offer='+offer+'&new_price='+new_price+'&description='+description+'&brand='+Brand+"&productCode="+productCode,
 		success:function(result){
 			alert(result);
 		}
