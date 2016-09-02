@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 12, 2016 at 01:31 PM
+-- Generation Time: Sep 02, 2016 at 07:58 PM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 7.0.8
 
@@ -54,17 +54,28 @@ CREATE TABLE `items` (
   `offer` tinyint(1) NOT NULL,
   `description` varchar(500) NOT NULL,
   `added_by` varchar(50) NOT NULL,
-  `quantity` int(11) NOT NULL
+  `quantity` int(11) NOT NULL,
+  `brand` varchar(20) NOT NULL,
+  `productCode` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `items`
 --
 
-INSERT INTO `items` (`id`, `name`, `cat_id`, `price`, `new_price`, `offer`, `description`, `added_by`, `quantity`) VALUES
-(4, 'Asus', 1, 20, 10, 1, '<p>Okey...Oley</p>', 'montaser', 1),
-(5, 'Iphone', 2, 100, 0, 0, '<p>New shit</p>', 'montaser', 3),
-(6, 'samsung', 2, 20, 10, 1, '<p><strong>Hello ,</strong></p><p><strong>this is just a test</strong></p>', 'montaser', 3);
+INSERT INTO `items` (`id`, `name`, `cat_id`, `price`, `new_price`, `offer`, `description`, `added_by`, `quantity`, `brand`, `productCode`) VALUES
+(11, 'MSI GT70 DOMINATOR-893 (Aluminum Black)', 1, 10000, 0, 0, '<ul><li><strong>Mfr Part Number:</strong> GT70 DOMINATOR-893;9S7-1763A2-893</li><li><strong>Processor:</strong> Intel Core i7-4800MQ Processor (2.7GHz Clock Speed, 3.7GHz Max Turbo, 6MB Intel Smart Cache, Quad-Core)</li><li><strong>Chipset:</strong> Intel HM87</li><li><strong>Memory:</strong> 16GB (8Gx2) DDR3L-1600 Memory</li><li><strong>Display:</strong> 17.3', 'Montaser', 2, 'MSI', 'GT70 DOMINATOR-893'),
+(12, 'Asus ROG G750JZ Gaming Laptop 4Gen I7 Haswell', 1, 1000, 0, 0, '<ul><li><strong>Mfr Part Number:', 'Montaser', 2, 'Asus', ' G750JZ-T4004H'),
+(13, 'Lenovo ThinkPad X1 Carbon Core i7 Touch 2K Display', 1, 400, 0, 0, '<ul><li><strong>Processor:</strong> I<span>ntel', 'Montaser', 2, 'Lenovo', ' 20BS0080AD'),
+(14, 'HP ProLiant DL160 Gen9 E5-2609v3 Rack Server', 1, 222, 0, 0, '<p><strong>Model', 'Montaser', 1, 'HP', ' 783364-425'),
+(15, 'ASUS ROG STRIX Radeon RX 480 8GB OC Edition', 1, 111, 0, 0, '<ul><li><strong>Mfr Part Number:</strong> STRIX-RX480-O8G-GAMING</li><li><strong>Chipset:', 'Montaser', 2, 'Asus', ' STRIX-RX480-O8G-GAMING'),
+(16, 'Acer Aspire Switch 10 E 10.1" Touchscreen Windows 8.1', 1, 300, 0, 0, '<ul><li><strong>Chipset:</strong> N/A</li><li><strong>Memory:</strong> 2GB DDR3L SDRAM Memory</li><li><strong>Display:', 'Montaser', 1, 'Acer', ' NT.MX3AA.001'),
+(17, 'Acer Iconia Tab 7 Quad Core 1.3Ghz 16GB Android 3G SIM', 1, 123, 0, 0, '<ul><li>MediaTek MT8382 Processor (1.3GHz, Quad-Core)</li><li><strong>Memory:</strong> 1GB DDR3 SDRAM Memory</li><li><strong>Display:', 'Montaser', 1, 'Acer', ' NT.L49EA.001'),
+(18, 'Ionik I725 Android 4.4 Tablet WiFi   3G SIM Card Tablet ', 1, 123, 0, 0, '<table><tbody><tr><td>FM Radio</td><td>Yes</td></tr><tr><td>3D support</td><td>Yes</td></tr><tr><td>I/O Ports</td><td>MiniMicro USB, ', 'Montaser', 2, 'Acer', 'IO.725DC.453 '),
+(19, 'Shuttle DS61 V1.1 LGA1155 Slim PC Barebone System', 1, 90, 0, 0, '<ul><li><br><ul><li>orts up to 65W TDP</li></ul></li><li><strong>Chipset:</strong> Intel H61 Express</li><li><strong>Memory:</strong> 2x 204pin DDR3-1066/1333/1600 SODIMM Slots, Dual Channel, Unbuffered, Max Capacity of 16GB</li><li><strong>Slots:</strong> 1x Mini PCI-Express Slot (Full Size)</li><li><strong>SATA:</strong> 2x SATA2 Ports', 'Montaser', 3, 'something', 'S61 V1'),
+(20, 'ASUS 24" VZ249H Ultra-low Blue Light Monitor FHD ', 1, 900, 0, 0, '<p><strong>SPLENDID Video Preset Modes :', 'Montaser', 1, 'Asus', ' VZ249H'),
+(21, 'MacBook pro', 1, 555, 0, 0, '<p>Mac</p>', 'Montaser', 1, 'Apple', '1234'),
+(22, 'MacBook Air', 1, 111, 0, 0, '<p>Air</p>', 'Montaser', 2, 'Apple', '1233');
 
 -- --------------------------------------------------------
 
@@ -129,8 +140,18 @@ CREATE TABLE `photos` (
 --
 
 INSERT INTO `photos` (`id`, `item_id`, `photo_path`, `photo_name`, `primary_photo`) VALUES
-(18, 4, 'items_photos/1.jpg', '1.jpg', 1),
-(19, 5, 'items_photos/2.jpg', '2.jpg', 1);
+(48, 11, 'items_photos/1.jpg', '1.jpg', 1),
+(49, 12, 'items_photos/2.jpg', '2.jpg', 1),
+(50, 13, 'items_photos/3.jpg', '3.jpg', 1),
+(51, 14, 'items_photos/4.jpg', '4.jpg', 1),
+(52, 15, 'items_photos/5.png', '5.png', 1),
+(53, 16, 'items_photos/6.png', '6.png', 1),
+(54, 17, 'items_photos/7.jpg', '7.jpg', 1),
+(55, 18, 'items_photos/8.jpg', '8.jpg', 1),
+(56, 19, 'items_photos/9.jpg', '9.jpg', 1),
+(57, 20, 'items_photos/10.png', '10.png', 1),
+(58, 21, 'items_photos/11.jpg', '11.jpg', 1),
+(59, 22, 'items_photos/12.jpg', '12.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -226,12 +247,12 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `items`
 --
 ALTER TABLE `items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 --
 -- AUTO_INCREMENT for table `log`
 --
@@ -246,7 +267,7 @@ ALTER TABLE `main_topics`
 -- AUTO_INCREMENT for table `photos`
 --
 ALTER TABLE `photos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 --
 -- AUTO_INCREMENT for table `requests`
 --
