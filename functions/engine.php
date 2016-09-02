@@ -294,4 +294,93 @@ echo '<div id="mf_box">
 }
 
 
+function printLastTenItems(){
+  
+  $query="SELECT * FROM `items` ORDER BY id DESC LIMIT 12";
+  $result=$GLOBALS['conn']->query($query);
+  $s = array();
+  $i=0;
+  while($r=$result->fetch_assoc()){
+      $s[$i]["id"]=$r["id"];
+      $s[$i]["name"]=$r["name"];
+      $s[$i]["price"]=$r["price"];
+      $s[$i]["new_price"]=$r["new_price"];
+      $id=$r["id"];
+      $query2="SELECT * FROM photos WHERE (item_id='$id' AND primary_photo='1')";
+      $result2=$GLOBALS['conn']->query($query2);
+        while($r2=$result2->fetch_assoc())
+          $s[$i]["path"]=$r2["photo_path"];
+
+        $i++;
+  }
+
+
+  echo '<div id="latest_item_div_title"> Latest Items</div>
+         <div id="latest_items_box">
+           <table id="latest_items_table">';
+
+
+  echo '<tr>
+  <td rowspan="2">
+    <div id="td_content">
+         <img id="item_box_img" src="'.$s[0]["path"].'" />
+             <div id="item_box_data"></div>
+             <div id="item_box_data">'.$s[0]["name"].'</div>
+            <button id="item_box_button" type="button">View Item</button>
+     </div>
+  </td>
+  ';
+  for($j=1;$j<4;$j++)
+    echo'
+      <td >
+       <div id="td_content">
+          <img id="item_box_img" src="'.$s[$j]["path"].'" />
+            <div id="item_box_data">'.$s[$j]["name"].'</div>
+             <button id="item_box_button" type="button">View Item</button>
+                 </div>
+       </td>
+    ';
+   
+     echo "</tr><tr>";
+
+
+
+     
+     for($j=4;$j<7;$j++)
+      echo '
+          <td >
+            <div id="td_content">
+               <img id="item_box_img" src="'.$s[$j]["path"].'" />
+                 <div id="item_box_data">'.$s[$j]["name"].'</div>
+                  <button id="item_box_button" type="button">View Item</button>
+                </div>
+              </td>
+      ';
+      echo '</tr>
+      </table>
+<table id="latest_items_table">
+             <tr>
+      ';
+
+  for($j=7;$j<12;$j++)
+    echo'<td >
+          <div id="td_content">
+              <img id="item_box_img" src="'.$s[$j]["path"].'" />
+               <div id="item_box_data">'.$s[$j]["name"].'</div>
+                  <button id="item_box_button" type="button">View Item</button>
+               </div>
+        </td>';
+
+
+echo' </tr>
+       </table>
+      </div>';
+    
+}
+
+
+function printScroller(){
+
+}
+
 ?>

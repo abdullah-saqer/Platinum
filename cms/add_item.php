@@ -190,7 +190,7 @@
 	if(!empty($_FILES['file'])){
 	   foreach ($_FILES['file']['name'] as $key => $name) {
 		  $val=substr($name, -3);
-		   strtolower($val);
+		  $val=strtolower($val);
 		 if($val!='jpg' && $val!='png' && $val!='gif')//complex
 			   die(print("0"));
 

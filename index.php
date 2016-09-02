@@ -220,114 +220,99 @@ require("functions/engine.php");
           
       <hr>
       <hr>
-      <!--  put here the box of the last update thing -->
+      <!--  put here the box of the last update thing-->
+
+    <?php
+      $query="SELECT * FROM `items` ORDER BY id DESC LIMIT 12";
+      $result=$GLOBALS['conn']->query($query);
+      $s = array();
+      $i=0;
+      while($r=$result->fetch_assoc()){
+          $s[$i]["id"]=$r["id"];
+          $s[$i]["name"]=$r["name"];
+          $s[$i]["price"]=$r["price"];
+          $s[$i]["new_price"]=$r["new_price"];
+          $id=$r["id"];
+          $query2="SELECT * FROM photos WHERE (item_id='$id' AND primary_photo='1')";
+          $result2=$GLOBALS['conn']->query($query2);
+            while($r2=$result2->fetch_assoc())
+              $s[$i]["path"]=$r2["photo_path"];
+
+            $i++;
+      }
+    ?>
+
     <div id="latest_item_div_title"> Latest Items</div>
        <div id="latest_items_box">
          <table id="latest_items_table">
           <tr>
                   <td rowspan="2">
                     <div id="td_content">
-                      <img id="item_box_img" src="nadeem.png" />
-                      <div id="item_box_data">- Our New Item -</div>
-                      <div id="item_box_data">New Item</div>
+                      <img id="item_box_img" src=<?php echo'"'.$s[0]["path"].'"';   ?> />
+                      <div id="item_box_data">- Our Newest Item -</div>
+                      <div id="item_box_data"><?php echo $s[0]["name"]; ?></div>
                       <button id="item_box_button" type="button">View Item</button>
                     </div>
                   </td>
-                  <td >
-                    <div id="td_content">
-                      <img id="item_box_img" src="nadeem.png" />
-                      <div id="item_box_data">New Item</div>
-                      <button id="item_box_button" type="button">View Item</button>
-                    </div>
-                  </td>
-                  <td >
-                    <div id="td_content">
-                      <img id="item_box_img" src="nadeem.png" />
-                      <div id="item_box_data">New Item</div>
-                      <button id="item_box_button" type="button">View Item</button>
-                    </div>
-                  </td>
-                  <td >
-                    <div id="td_content">
-                      <img id="item_box_img" src="nadeem.png" />
-                      <div id="item_box_data">New Item</div>
-                      <button id="item_box_button" type="button">View Item</button>
-                    </div>
-                  </td>
+
+                  <?php
+                     for($j=1;$j<4;$j++)
+                            echo'
+                              <td >
+                               <div id="td_content">
+                                  <img id="item_box_img" src="'.$s[$j]["path"].'" />
+                                    <div id="item_box_data">'.$s[$j]["name"].'</div>
+                                     <button id="item_box_button" type="button">View Item</button>
+                                         </div>
+                               </td>
+                            ';
+                    ?>
                </tr>
+
+
+
                <tr>
-                  <td >
-                  <div id="td_content">
-                      <img id="item_box_img" src="nadeem.png" />
-                      <div id="item_box_data">New Item</div>
-                      <button id="item_box_button" type="button">View Item</button>
-                  </div>
-                  </td>
-                   <td >
-                   <div id="td_content">
-                      <img id="item_box_img" src="nadeem.png" />
-                      <div id="item_box_data">New Item</div>
-                      <button id="item_box_button" type="button">View Item</button>
-                    </div>
-                  </td>
-                   <td >
-                   <div id="td_content">
-                      <img id="item_box_img" src="nadeem.png" />
-                      <div id="item_box_data">New Item</div>
-                      <button id="item_box_button" type="button">View Item</button>
-                    </div>
-                  </td>
+                <?php
+               for($j=4;$j<7;$j++)
+                    echo '
+                        <td >
+                          <div id="td_content">
+                             <img id="item_box_img" src="'.$s[$j]["path"].'" />
+                               <div id="item_box_data">'.$s[$j]["name"].'</div>
+                                <button id="item_box_button" type="button">View Item</button>
+                              </div>
+                            </td>
+                    ';
+                    ?>
                </tr>
+
          </table>
+
+         
 
            <table id="latest_items_table">
              <tr>
-                <td >
-                   <div id="td_content">
-                      <img id="item_box_img" src="nadeem.png" />
-                      <div id="item_box_data">New Item</div>
-                      <button id="item_box_button" type="button">View Item</button>
-                    </div>
-                  </td>
-                  <td >
-                   <div id="td_content">
-                      <img id="item_box_img" src="nadeem.png" />
-                      <div id="item_box_data">New Item</div>
-                      <button id="item_box_button" type="button">View Item</button>
-                    </div>
-                  </td>
-                  <td >
-                   <div id="td_content">
-                      <img id="item_box_img" src="nadeem.png" />
-                      <div id="item_box_data">New Item</div>
-                      <button id="item_box_button" type="button">View Item</button>
-                    </div>
-                  </td>
-                  <td >
-                   <div id="td_content">
-                      <img id="item_box_img" src="nadeem.png" />
-                      <div id="item_box_data">New Item</div>
-                      <button id="item_box_button" type="button">View Item</button>
-                    </div>
-                  </td>
-                  <td >
-                   <div id="td_content">
-                      <img id="item_box_img" src="nadeem.png" />
-                      <div id="item_box_data">New Item</div>
-                      <button id="item_box_button" type="button">View Item</button>
-                    </div>
-                  </td>
+                <?php
+                  for($j=7;$j<12;$j++)
+                      echo'<td >
+                            <div id="td_content">
+                                <img id="item_box_img" src="'.$s[$j]["path"].'" />
+                                 <div id="item_box_data">'.$s[$j]["name"].'</div>
+                                    <button id="item_box_button" type="button">View Item</button>
+                                 </div>
+                          </td>';
+
+                ?>
              </tr>
            </table>
         </div>
-
+        <!-- end of last items-->
     </div>
 
 
       <div class="scroll_to_top">
         <span id="up_arrow" class="glyphicon glyphicon-menu-up">
       </div>
-      
 
 
 
@@ -336,51 +321,8 @@ require("functions/engine.php");
     
     <br><br><br>
     <br><br><br>
-        <footer id="bottom_footer"> 
-     
-      <table id="footer_lists_table">
-        <tr>
-          <td>
-            <ul> <span>Nadeem Salah</span>
-                <li><a href="">List item 1 wewewewew</a></li>
-                <li><a href="">List item 2wewewewew</a></li>
-                <li><a href="">List item 3wewewewewe</a></li>
-                <li><a href="">List item 4wewewewe</a></li>
-            </ul>
-          </td>
-           <td>
-            <ul>  <span>Montaser Qasem</span>
-                <li><a href="">List item 1ewewewewe</a></li>
-                <li><a href="">List item 2wewewewe</a></li>
-                <li><a href="">List item 3wewewewewe</a></li>
-                <li><a href="">List item 4wewewewewewewe</a></li>
-            </ul>
-          </td>
-            <td>
-            <ul> <span>Ahmad Wewewe</span>
-                <li><a href="">List item 1wewewewewewewe</a></li>
-                <li><a href="">List item 2wewewewewe</a></li>
-                <li><a href="">List item 3wewewewewewe</a></li>
-                <li><a href="">List item 4ewewewewewewe</a></li>
-            </ul>
-          </td>
-        </tr>
-      </table>
+      <?php printFooter(); ?>
 
-      <div id="subscribe_section">
-         <p>Subscribe to the dark side</p>
-        <form action="#" method="POST" id="subscribe_from">
-               
-          <input type="email" name="subscriber_email" id="subscriber_email" placeholder="put your E-mail to get our lastest offers.">
-          <input type="submit" value="Subscribe">
-            
-        </form>
-         
-      </div>
-
-     <div id="copy_right">All Rights Reserved &copy; Platinum-jo 2016 .</div>
-
-    </footer>
 
 </body>
 </html>
