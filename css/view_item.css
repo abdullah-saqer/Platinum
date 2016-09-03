@@ -116,52 +116,8 @@
    border-bottom-left-radius:4px;
 }
 
-#order_section{
-  -webkit-box-flex:1; -moz-box-flex:1;
-  text-align:center;
-}
-
-#drop_dwon_button{
-    background-color: rgba(51, 214, 255 , 0.8);
-    color: white;
-    padding:5px 20px 5px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer; 
-    text-align:center;
-    border-radius:5px;
-    font-weight:bolder;
-}
- 
- #drop_donw_menu_content a{
-   display:block;
-   text-align:center;
-   padding:6px 10px 6px 10px;
-   width:100%;
-   color:rgba(52,52,55,0.8);
- }
-
-  #drop_donw_menu_content a:hover{
-    background:rgba(51, 214, 255 , 0.4);
-  }
-
-#drop_donw_menu_content{
-    display:none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
 
 
-#drop_dwon_button:focus ~ #drop_donw_menu_content{
-  display:block;
-}
-/*
-#drop_donw_menu_content:hover{
-  display:block;
-}
-*/
 #content_section{
   margin-top:10px;
   display:-webkit-box; display:-moz-box;
@@ -307,42 +263,62 @@ del{
 }
 
 #top_control_section{
-  display:-webkit-box; display:-moz-box;
- -webkit-box-orient:horizontal; -moz-box-orient:horizontal;
+   display:-webkit-box; 
+  display:-moz-box;
+  -webkit-box-orient:horizontal; 
+  -moz-box-orient:horizontal;
   border:1px solid lightgray;
+  padding:10px;
 }
 
-#top_control_section div{
- margin:15px 8px 15px 2px;
+
+#order_items_by_button{
+    background-color: rgba(51, 214, 255 , 0.8);
+    color: white;
+    padding:5px 20px 5px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; 
+    text-align:center;
+    border-radius:5px;
+    font-weight:bolder;
+}
+ 
+ #oib_menu a{
+   display:block;
+   text-align:center;
+   padding:6px 10px 6px 10px;
+   width:100%;
+   color:rgba(52,52,55,0.8);
+   cursor:pointer;
+ }
+
+  #oib_menu a:hover{
+    background:rgba(51, 214, 255 , 0.4);
+  }
+
+#oib_menu{
+    display:none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-#top_control_section div:nth-child(even){
-  -webkit-box-flex:1; -moz-box-flex:1;
+
+#order_items_by_button:focus ~ #oib_menu{
+  display:block;
 }
 
-#top_control_section div:first-child , #top_control_section div:nth-child(3) span{
-  font-weight:bolder;
-  font-size:15px;
-  color:gray;
-  padding:0px 5px 0px 5px;
+#oib_menu:hover{
+  display:block;
 }
 
-#top_control_section div:nth-child(1){
-    margin-top:20px;
-}
 
-#top_control_section div:nth-child(2) table tr td button{
-  padding:5px 30px 5px 30px;
-  border:none;
-  border:1px solid gray;
-  background:lightblue;
-  margin-left:2px;
-  
+#display_items_as{
+  -webkit-box-flex:1;
+  -moz-box-flex:1;
 }
-
-#top_control_section div:nth-child(3)  select{
-  padding:5px;
-} 
 
 #display_items_box{
   -webkit-box-flex:1; -moz-box-flex:1;
@@ -499,7 +475,7 @@ del{
 
 /***** The Style below to the header & footer ******/
 /***** The Style below to the header & footer ******/
-/*
+
 .navbar {
     margin-bottom: 0;
     background-color: #2d2d30;
@@ -687,7 +663,7 @@ del{
 
 }
 
-*/
+
 
 #bottom_footer {
   position: relative;

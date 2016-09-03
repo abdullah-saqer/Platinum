@@ -82,46 +82,31 @@ require("functions/engine.php");
                    <input type="search" placeholder="search item .." />
               </div>
              
-              <div id="order_section">
-                     <button type="button" id="drop_dwon_button">Order By</button>
-                     <div id="drop_donw_menu_content" >
-                       <a href="#">Manufacture</a>
-                       <a href="#">Price</a>
-                       <a href="#">Fuck me</a>
-                     </div>
-              </div>
+             
               
              </div>
 
              <div id="items_display_section">
+               
                 <div id="top_control_section">
-                   
-                   <div id="d_word">Display As : </div>
-                   <div>
-                     <table>
-                       <tr>
-                         <td>
-                            <button type="button" id="display_as_list_btn">List</button>
-                         </td>
-                         <td>
-                           <button type="button" id="display_as_grid_btn">Grid</button>
-                         </td>
-                       </tr>
-                     </table>
-                   </div>
-                   
-                   <div>
-                     <span id="sb_word">Sort By</span>
-                     <select id="sort_by_ops">
-                       <option id="">-Default-</option>
-                       <option id="">Name (A-Z)</option>
-                       <option id="">Name (Z-A)</option>
-                       <option id="">Price low < high </option>
-                       <option id="">Price low > high</option>
-                       <option id="">Model (A-Z)</option>
-                       <option id="">Model (Z-A)</option>
-                     </select>
-                    </div>
+                      
+                      <div id="display_items_as">
+                         <button id="order_items_by_button">Display As</button>
+                         <div id="oib_menu" > <!--oib stand for order items by-->
+                           <a id="display_as_list_btn">List</a>
+                           <a id="display_as_grid_btn">Gird</a>
+                         </div>
+                      </div>
+
+                      <div id="order_items_by">
+                         <button id="order_items_by_button">Order By</button>
+                         <div id="oib_menu" > <!--oib stand for order items by-->
+                           <a href="#">Manufacture</a>
+                           <a href="#">Price</a>
+                           <a href="#">Fuck me</a>
+                         </div>
+                      </div>
+                    
                 </div>
                 <div id="display_items_box" class="display_as_list">
                     <div id="item_box_rec">
