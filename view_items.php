@@ -9,7 +9,7 @@ require("functions/engine.php");
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="javascript/header_bar.js"></script>
-
+    <script type="text/javascript" src="javascript/view_items.js"></script>
     <link rel="stylesheet" href="css/animate_css.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -30,41 +30,12 @@ require("functions/engine.php");
      <div id="container">
         
         <div id="left_side">
-            
-            <div id="ctgs_box">
-               <div id="title">categories</div>
-               <table id="ctgs_box_table">
-                 <tr><td><a href="#">Laptops</a></td></tr>
-                 <tr><td><a href="#">Mobiles</a></td></tr>
-               </table>
-            </div>
-            
-            <div id="fbb_box">
-              <div id="title">Filter By Brand</div>
-              <table id="fbb_box_table">
-                 <tr><td><a href="#">item1</a></td></tr>
-                 <tr><td><a href="#">item3</a></td></tr>
-                 <tr><td><a href="#">item4</a></td></tr>
-                 <tr><td><a href="#">item5</a></td></tr>
-                 <tr><td><a href="#">item6</a></td></tr>
-                 <tr><td><a href="#">item7</a></td></tr>
-                 <tr><td><a href="#">item8</a></td></tr>
-                 <tr><td><a href="#">item9</a></td></tr>
-                 <tr><td><a href="#">item10</a></td></tr>
-               </table>
-            </div>
-            
-            <div id="mf_box">
-               <div id="title">More Filters</div>
-              <table id="mf_box_table">
-                 <tr><td><a href="#">item1</a></td></tr>
-                 <tr><td><a href="#">item3</a></td></tr>
-                 <tr><td><a href="#">item4</a></td></tr>
-                 <tr><td><a href="#"></a></td></tr>
-               </table>
-            </div>
-        
-        </div> 
+            <?php
+              printCategoriesLeftBox();
+              printFilterBrandLeftBox();
+              printMoreFilterLeftBox();
+            ?>
+       </div> 
         
         <div id="right_side">
           
@@ -93,21 +64,21 @@ require("functions/engine.php");
                       <div id="display_items_as">
                          <button id="order_items_by_button">Display As</button>
                          <div id="oib_menu" > <!--oib stand for order items by-->
-                           <a id="display_as_list_btn">List</a>
-                           <a id="display_as_grid_btn">Gird</a>
+                           <div id="dal_btn">List</div>
+                           <div id="dag_btn">Gird</div>
                          </div>
                       </div>
 
                       <div id="order_items_by">
                          <button id="order_items_by_button">Order By</button>
                          <div id="oib_menu" > <!--oib stand for order items by-->
-                           <a href="#">Manufacture</a>
-                           <a href="#">Price</a>
-                           <a href="#">Fuck me</a>
+                           <div>Manufacture</div>
+                           <div>Price</div>
+                           <div>Fuck me</div>
                          </div>
                       </div>
-                    
                 </div>
+
                 <div id="display_items_box" class="display_as_list">
                     <div id="item_box_rec">
                        <div id="item_box_rec_name">Lenovo Ideapad Flex 15</div>
@@ -459,19 +430,6 @@ require("functions/engine.php");
                     </div>
                 </div> 
              
-                <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-                <script type="text/javascript">
-                  $(document).ready(function(){
-                    $('#display_as_list_btn').click(function(){
-                       $('#display_items_box').removeClass('display_as_grid');
-                       $('#display_items_box').addClass('display_as_list');
-                    });
-                     $('#display_as_grid_btn').click(function(){
-                       $('#display_items_box').removeClass('display_as_list');
-                       $('#display_items_box').addClass('display_as_grid');
-                    });
-                  });
-                </script>  
              
              </div>
         </div>
