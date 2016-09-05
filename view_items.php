@@ -60,7 +60,7 @@ require("functions/engine.php");
              <div id="items_display_section">
                
                 <div id="top_control_section">
-                      
+                      <!--
                       <div id="display_items_as">
                          <div id="dal_btn">
                            <img src="img/list_icon.png">
@@ -68,7 +68,7 @@ require("functions/engine.php");
                           <div id="dag_btn">
                             <img src="img/grid_icon.png">
                           </div>
-                      </div>
+                      </div>-->
 
                       <div id="order_items_by">
                          <button id="order_items_by_button">Order By</button>
