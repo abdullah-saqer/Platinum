@@ -62,11 +62,12 @@ require("functions/engine.php");
                 <div id="top_control_section">
                       
                       <div id="display_items_as">
-                         <button id="order_items_by_button">Display As</button>
-                         <div id="oib_menu" > <!--oib stand for order items by-->
-                           <div id="dal_btn">List</div>
-                           <div id="dag_btn">Gird</div>
+                         <div id="dal_btn">
+                           <img src="img/list_icon.png">
                          </div>
+                          <div id="dag_btn">
+                            <img src="img/grid_icon.png">
+                          </div>
                       </div>
 
                       <div id="order_items_by">
@@ -409,11 +410,7 @@ require("functions/engine.php");
                           </div>
 
                           <div id="item_box_rec_desc">
-                                From the Manufacturer http://www.kingston.com/en/hyperx/cloud#hscc .
-                                From the Manufacturer http://www.kingston.com/en/hyperx/cloud#hscc .
-                                 From the Manufacturer http://www.kingston.com/en/hyperx/cloud#hscc .
-                                From the Manufacturer http://www.kingston.com/en/hyperx/cloud#hscc .
-                                 From the Manufacturer http://www.kingston.com/en/hyperx/cloud#hscc .
+                                From the Manufacturer http://www.kingston.com/en/hyperx/
                           </div>
 
                           <div id="item_box_rec_price">

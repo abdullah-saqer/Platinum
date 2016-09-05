@@ -301,7 +301,6 @@ del{
     background-color:#f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index:1;
 }
 
  #oib_menu div{
@@ -311,20 +310,33 @@ del{
    width:100%;
    color:rgba(52,52,55,0.8);
    cursor:pointer;
-   z-index:2;
+   transition:background 300ms;
  }
 
-  #oib_menu div:hover{
+#oib_menu div:hover{
     background:rgba(51, 214, 255 , 0.4);
-  }
+}
 
-
-
+#order_items_by_button:hover + #oib_menu , #oib_menu:hover{
+  display:block;
+}
 
 #display_items_as{
   -webkit-box-flex:1;
   -moz-box-flex:1;
+
 }
+
+#display_items_as div{
+  display:inline-block;
+  margin:-5px;
+  padding:3px;
+}
+
+ #dal_btn img , #dag_btn img{
+   height:40px; width:40px;
+   cursor:pointer;
+ }
 
 #display_items_box{
   -webkit-box-flex:1; -moz-box-flex:1;
@@ -491,10 +503,12 @@ del{
     opacity:0.9;
     height: 160px;
 }
-  #navbar{
+ 
+ #navbar{
     background-color:rgba(21,22,25,1);
     border:0px;
   }
+ 
   #navbar img{
     width:220px;
     
@@ -776,10 +790,10 @@ cursor: pointer;
        display:inline-block;
    }
    
-   #subscribe_from input[type="email"]{
-   width:200px;
-   margin-bottom:20px;
-   }
+  #subscribe_from input[type="email"]{
+     width:200px;
+     margin-bottom:20px;
+  }
   
   #subscribe_from input{
     display:inline-block;
@@ -788,9 +802,10 @@ cursor: pointer;
   #copy_right{
     text-align:center;
   }
+  
   #subscribe_section{
    margin:20px 20px 20px 80px;
-}
+  }
 
    
 }
