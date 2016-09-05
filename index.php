@@ -245,26 +245,29 @@ require("functions/engine.php");
     <div id="latest_item_div_title"> Latest Items</div>
        <div id="latest_items_box">
          <table id="latest_items_table">
-          <tr>
+          <tr> 
+                
                   <td rowspan="2">
-                    <div id="td_content">
-                      <img id="item_box_img" src=<?php echo'"'.$s[0]["path"].'"';   ?> />
-                      <div id="item_box_data">- Our Newest Item -</div>
-                      <div id="item_box_data"><?php echo $s[0]["name"]; ?></div>
-                      <button id="item_box_button" type="button">View Item</button>
-                    </div>
+                    <a href="#">
+                      <div id="td_content">
+                        <img id="item_box_img" src=<?php echo'"'.$s[0]["path"].'"';   ?> />
+                          <div id="item_box_data">
+                          <?php echo $s[0]["name"];?>
+                          </div>
+                      </div>
+                    </a>
                   </td>
-
                   <?php
                      for($j=1;$j<4;$j++)
                             echo'
-                              <td >
-                               <div id="td_content">
-                                  <img id="item_box_img" src="'.$s[$j]["path"].'" />
-                                    <div id="item_box_data">'.$s[$j]["name"].'</div>
-                                     <button id="item_box_button" type="button">View Item</button>
-                                         </div>
-                               </td>
+                              <td>
+                                <a href="#">
+                                 <div id="td_content">
+                                    <img id="item_box_img" src="'.$s[$j]["path"].'" />
+                                      <div id="item_box_data">'.$s[$j]["name"].'</div>
+                                  </div>
+                                </a>
+                              </td>
                             ';
                     ?>
                </tr>
@@ -275,13 +278,14 @@ require("functions/engine.php");
                 <?php
                for($j=4;$j<7;$j++)
                     echo '
-                        <td >
-                          <div id="td_content">
-                             <img id="item_box_img" src="'.$s[$j]["path"].'" />
-                               <div id="item_box_data">'.$s[$j]["name"].'</div>
-                                <button id="item_box_button" type="button">View Item</button>
-                              </div>
-                            </td>
+                       <td>
+                          <a href="#">
+                            <div id="td_content">
+                               <img id="item_box_img" src="'.$s[$j]["path"].'" />
+                                 <div id="item_box_data">'.$s[$j]["name"].'</div>
+                            </div>
+                          </a>
+                        </td>
                     ';
                     ?>
                </tr>
@@ -294,12 +298,13 @@ require("functions/engine.php");
              <tr>
                 <?php
                   for($j=7;$j<12;$j++)
-                      echo'<td >
+                      echo'<td>
+                          <a href="#">
                             <div id="td_content">
                                 <img id="item_box_img" src="'.$s[$j]["path"].'" />
                                  <div id="item_box_data">'.$s[$j]["name"].'</div>
-                                    <button id="item_box_button" type="button">View Item</button>
-                                 </div>
+                            </div>
+                           </a>
                           </td>';
 
                 ?>

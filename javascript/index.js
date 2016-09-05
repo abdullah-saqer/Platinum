@@ -58,6 +58,10 @@ $(".slick-next").html('<i class="fa fa-angle-right" ></i>');
 $(".slick-prev").html("");
 $(".slick-prev").html('<i class="fa fa-angle-left" ></i>');
 
+ // this line of code for setting the attribute (title) for latest items boxes..
+ $('#latest_items_table tr td[rowspan="2"] , #latest_items_table tr td').attr('title',
+  'Click to view this item');
+
 });
 
 
