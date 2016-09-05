@@ -110,10 +110,25 @@ require("functions/engine.php");
                            </table>
                          </div>
                      
-                        <div id="new_div">
-                          <button type="submit" onclick="alert('wew')">Add To Cart</button>
+                        <div id="add_to_cart_button_section">
+                          <div></div>
+                          <button title="add this item to cart" type="submit" onclick="alert('added to the cart')">Add To Cart</button>
+                         
                         </div>
-                     
+                       
+                        <div id="share_item_section">
+                            <div>Share Item</div>
+                            <div id="facebook_icon" title="share this item on facebook">
+                            <i class="fa fa-facebook-official" style="font-size:24px"></i>
+                            </div>
+                            <div id="twitter_icon"  title="share this item on twitter">
+                            <i class="fa fa-twitter-square" style="font-size:24px"></i>  
+                            </div>
+                            <div id="google_plus_icon"  title="share this item on google plus">
+                              <i class="fa fa-google-plus" style="font-size:24px"></i>
+                            </div>
+                        </div>
+
                      </div>
                   </div>
              </div>

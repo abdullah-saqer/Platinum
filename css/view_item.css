@@ -157,10 +157,12 @@
 
 #item_picture_boxes table{
   width:100%;
+  margin-top:-2px;
 }
 
 #item_picture_boxes table tr td[colspan="3"] img{
   width:350px;
+  height:200px;
   border:1px solid lightgray;
 }
 #item_picture_boxes table tr td img{
@@ -169,6 +171,7 @@
   margin-right:10px;
   margin-top:10px;
   transition: opacity 600ms;
+  height:70px;
 }
 
 #item_picture_boxes table tr td img:hover{
@@ -181,10 +184,13 @@
   -webkit-box-flex:1; 
   -moz-box-flex:1;
   margin-top:8px;
-  box-shadow:inset 0px 0px 5px 0.5px lightgray;
+   display:-moz-box;
+    -moz-box-orient:vertical;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
 }
 
-#item_info , #item_price_section , #add_item_section{
+#item_info , #item_price_section , #add_to_cart_button_section , #share_item_section , #add_item_section{
    padding:15px;
    border-bottom:1px solid lightgray;
 }
@@ -202,7 +208,7 @@
 }
 
 del{
-  color:red;
+  color:orange;
 }
 
 #add_item_section table{
@@ -221,17 +227,65 @@ del{
   box-shadow:inset 0px 0px 5px 0.5px lightgray;
 }
 
-#new_div{
+#add_to_cart_button_section{
   padding:20px;
-  float:right;
+   display:-moz-box;
+   display:-webkit-box;
+  -moz-box-orient:horizontal;
+  -webkit-box-orient:horizontal;
 }
 
-#new_div button[type='submit']{
-    padding:10px 15px 10px 15px;
+#add_to_cart_button_section button[type='submit']{
+    height:30px; width:100px;
     border:none;
-    background:rgba(0, 179, 179 , 0.7);
+    background:rgba(0, 179, 179 , 0.6);
     border-radius:3px;
+    font-weight:bolder;
+    transition: background 500ms;
 }
+
+#add_to_cart_button_section button[type='submit']:hover{
+  background:rgba(0, 179, 179 , 1);
+}
+
+#add_to_cart_button_section div{
+  -moz-box-flex:1;
+  -webkit-box-flex:1
+}
+
+#share_item_section{
+   display:-moz-box;
+   display:-webkit-box;
+  -moz-box-orient:horizontal;
+  -webkit-box-orient:horizontal;
+}
+
+#share_item_section div{
+  margin:5px 6px 5px 6px;
+}
+
+#share_item_section div:first-child{
+   font-weight:bolder;
+   margin-top:8px;
+}
+
+#share_item_section div i{
+  cursor:pointer;
+  transition: color 500ms;
+}
+
+#share_item_section #facebook_icon:hover{
+ color:rgb(59,89,152);
+}
+
+#share_item_section #twitter_icon:hover{
+  color:rgb(0, 172, 237)
+}
+
+#share_item_section #google_plus_icon:hover{
+  color:rgb(221, 75, 57);
+}
+
 
 #description_section{
   border:1px solid lightgray;
@@ -324,7 +378,6 @@ del{
 #display_items_as{
   -webkit-box-flex:1;
   -moz-box-flex:1;
-
 }
 
 #display_items_as div{
