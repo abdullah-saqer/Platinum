@@ -13,6 +13,10 @@ $(document).ready(function(){
 
 		  var txt = $(".icon").hasClass('icon-grid') ? 'List' : 'Grid';
 		  $('.icon').toggleClass('icon-grid');
+
+		  $(".icon").addClass("animated bounceIn");
+		  setTimeout(function(){$(".icon").removeClass("animated bounceIn");},1000);
+
 		  $(".label").text(txt);
 
 		  displayFlag=!displayFlag;
