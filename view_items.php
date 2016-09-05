@@ -71,7 +71,7 @@ require("functions/engine.php");
                           </div>
                           <span class="label">List</span>
                         </div>
-                        
+
                       </div>
 
 
@@ -86,6 +86,7 @@ require("functions/engine.php");
                 </div>
 
                 <div id="display_items_box" class="display_as_list">
+
                     <div id="item_box_rec">
                        <div id="item_box_rec_name">Lenovo Ideapad Flex 15</div>
                        
@@ -115,6 +116,7 @@ require("functions/engine.php");
                           </div>
                        </div>
                     </div>
+                    
                     <div id="item_box_rec">
                        <div id="item_box_rec_name">Lenovo Ideapad Flex 15</div>
                        
