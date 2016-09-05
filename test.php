@@ -10,7 +10,8 @@
 		initSample();
 
 		$("#submit").click(function(){
-			alert($("#editor").html());
+			var s = CKEDITOR.instances['editor'].getData();
+			CKEDITOR.instances['editor'].setData("hehe");
 		});
 
 	});

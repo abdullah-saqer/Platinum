@@ -7,6 +7,17 @@
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <script type="text/javascript" src="../javascript/jquery.js"></script>
 <script type="text/javascript" src="../javascript/add_item.js"></script>
+  <!-- wysiwyg files -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css">
+  
+  <script src="../ckeditor/ckeditor.js"></script>
+  <script type="text/javascript" src="../ckeditor/samples/js/sample.js"></script>
+
+  <!--  -->
+  
  	<div id="adder">
 			<div id="paragraph_box">
 				<p>These are the items you have , <u>add/edit/delete</u> the items you want.</p>
@@ -167,7 +178,7 @@
 			</div>
 			<script type="text/javascript">
 				 $(function(){
-     				 $('#edit').froalaEditor();
+     				$('#edit').froalaEditor();
    				 });
 				</script>
 		</form>

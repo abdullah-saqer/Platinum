@@ -1,8 +1,10 @@
 $(document).ready(function(){
-    $("#submit_button").click(function(){
-	var content=($('#edit').froalaEditor('html.get'));
-	var subject=$("#first-name").val();
+	
 
+
+    $("#submit_button").click(function(){
+	var content=CKEDITOR.instances['editor'].getData();
+	var subject=$("#first-name").val();
 	if(content.length>0 && subject.length>0){
 		console.log(content);
 		$.ajax({
