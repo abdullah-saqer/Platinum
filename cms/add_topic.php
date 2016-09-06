@@ -16,7 +16,6 @@
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-  <!--<link rel="stylesheet" type="text/css" href="../ckeditor/samples/css/samples.css">-->
   <link rel="stylesheet" type="text/css" href="../ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css">
   
   <script src="../ckeditor/ckeditor.js"></script>
@@ -25,11 +24,11 @@
   <!--  -->
   <script>
   $(document).ready(function(){
-
+    initSample();
+    
     $(".wysiwyg_container").css({
       "margin-left":"69px",
       "margin-top":"20px",
-      
     });
 
   });
@@ -51,19 +50,13 @@
 
 </form>
 
-<div class="wysiwyg_container">
-
+<div style="border:0px solid black;"class="wysiwyg_container">
   <div id="editor"></div>
-
-  <script type="text/javascript">
-  initSample();
-  </script>
-
 </div>
 
 
-<div id="submit_button_container">
-<button id="submit_button" class="pure-button pure-button-primary">Submit</button>
+<div style="position:relative;left:100%;top:50px;" id="submit_button_container">
+  <button id="submit_button" class="pure-button pure-button-primary">Submit</button>
 </div>
 
   

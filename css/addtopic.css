@@ -109,14 +109,12 @@ box-shadow: inset 0px -8px 31px -23px rgba(0,0,0,0.75);
 }
 .wysiwyg_container{
 	position: relative;
-	border:2px solid red;
 	margin-left: 50px;
 }
 
 #submit_button_container{
 	position: relative;
 	float: right;
-	left:-500px;
-	margin-right: 1000px;
+	
 }
 

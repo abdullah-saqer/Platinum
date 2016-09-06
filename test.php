@@ -11,7 +11,7 @@
 
 		$("#submit").click(function(){
 			var s = CKEDITOR.instances['editor'].getData();
-			CKEDITOR.instances['editor'].setData("hehe");
+			CKEDITOR.instances['editor'].setData("<h1>Montaser Qasem</h1>");
 		});
 
 	});

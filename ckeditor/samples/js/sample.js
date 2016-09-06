@@ -12,14 +12,21 @@ if ( CKEDITOR.env.ie && CKEDITOR.env.version < 9 )
 // unless user specified own height.
 CKEDITOR.config.height = 150;
 CKEDITOR.config.width = 800;
-CKEDITOR.config.margin = "500px";
+name="editor";
+
+function setEditorName(x){
+	name=x;
+	
+}
+
 
 var initSample = ( function() {
+
 	var wysiwygareaAvailable = isWysiwygareaAvailable(),
 		isBBCodeBuiltIn = !!CKEDITOR.plugins.get( 'bbcode' );
 
 	return function() {
-		var editorElement = CKEDITOR.document.getById( 'editor' );
+		var editorElement = CKEDITOR.document.getById(name);
 
 		// :(((
 		if ( isBBCodeBuiltIn ) {
@@ -30,10 +37,10 @@ var initSample = ( function() {
 
 		// Depending on the wysiwygare plugin availability initialize classic or inline editor.
 		if ( wysiwygareaAvailable ) {
-			CKEDITOR.replace( 'editor' );
+			CKEDITOR.replace(name);
 		} else {
 			editorElement.setAttribute( 'contenteditable', 'true' );
-			CKEDITOR.inline( 'editor' );
+			CKEDITOR.inline(name);
 
 			// TODO we can consider displaying some info box that
 			// without wysiwygarea the classic editor may not work.
@@ -47,7 +54,7 @@ var initSample = ( function() {
 			return true;
 		}
 
-		return !!CKEDITOR.plugins.get( 'wysiwygarea' );
+		return !!CKEDITOR.plugins.get('wysiwygarea');
 	}
 } )();
 

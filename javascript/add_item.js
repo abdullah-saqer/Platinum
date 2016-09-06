@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	$("#editor_container").css({"margin-top":"50px"});
+
 	$("#add_item_icon").click(function(){
 		$("#background_shadow").css({display:'none',height:$(document).height()});
 		$("#background_shadow").fadeIn();
@@ -38,7 +40,7 @@ $("#add_item_submit_button").click(function(){
 	var item_new_price="";
 	var Brand=$("#brand").val();
 	var productCode=$("#productCode").val();
-	var description=($('#edit').froalaEditor('html.get'));
+	var description=CKEDITOR.instances['editorAddItem'].getData();
 	if(item_offer==1)
 		item_new_price=$("#new_price").val();
 
@@ -96,10 +98,10 @@ $("#edit_item*").click(function(){
 			$("#item_price_field2").attr("value",info[2]);
 			$("#new_price2").attr("value",info[3]);
 			$(".edit_offer_list").val(info[4]);
-			$('#edit2').froalaEditor('html.set', info[5]);
+			CKEDITOR.instances['editorEditItem'].setData(info[5]);
 			$("#form_number2").attr("value",info[6]);
-			$("#Brand2").val(info[7]);
-			$("#productCode2").val(info[8]);
+			$("#Brand2").attr("value","HAHA");
+			$("#productCode2").attr("value",info[8]);
 		}
 	});
 
@@ -118,7 +120,8 @@ $("#add_item_submit_button2").click(function(){
 	var category=$("#category_list2").val();
 	var offer=$(".edit_offer_list").val();
 	var new_price=$("#new_price2").val();
-	var description=($('#edit2').froalaEditor('html.get'));
+	var description=(CKEDITOR.instances['editorEditItem'].getData());
+	alert(description);
 	var Brand=$("#Brand2").val();
 	var productCode=$("#productCode2").val();
 	var key=$("#key_holder").text();
