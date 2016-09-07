@@ -26,6 +26,12 @@ require("functions/engine.php");
      <span><br><br><br><br><br><br><br><br></span>
     
  <div id="body"><!--this body insted of the real body ,, for any reasons-->
+ <div id="share_item_section">
+        <div>Share this item<br> on facebook</div>
+        <div id="facebook_icon" title="share this item on facebook">
+         <i class="fa fa-facebook-official" style="font-size:24px"></i>
+        </div>
+ </div>
      <div id="container">
         
         <div id="left_side">
@@ -53,6 +59,7 @@ require("functions/engine.php");
                   <div id="item_title_bar">
                     Lenovo Ideapad Flex 15
                   </div>
+              
                   <div id="content_box">
                      <div id="item_picture_boxes">
                           <table><!-- Master photo -->
@@ -119,12 +126,7 @@ require("functions/engine.php");
                         
                        -->
                      </div>
-                       <div id="share_item_section">
-                            <div>Share this item<br> on facebook</div>
-                            <div id="facebook_icon" title="share this item on facebook">
-                            <i class="fa fa-facebook-official" style="font-size:24px"></i>
-                            </div>
-                      </div>
+                     
                   </div>
              </div>
                   
