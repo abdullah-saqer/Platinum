@@ -121,7 +121,6 @@ $("#add_item_submit_button2").click(function(){
 	var offer=$(".edit_offer_list").val();
 	var new_price=$("#new_price2").val();
 	var description=(CKEDITOR.instances['editorEditItem'].getData());
-	alert(description);
 	var Brand=$("#Brand2").val();
 	var productCode=$("#productCode2").val();
 	var key=$("#key_holder").text();
