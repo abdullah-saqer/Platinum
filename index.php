@@ -251,9 +251,7 @@ require("functions/engine.php");
                     <a href="#">
                       <div id="td_content">
                         <img id="item_box_img" src=<?php echo'"'.$s[0]["path"].'"';   ?> />
-                          <div id="item_box_data">
-                          <?php echo $s[0]["name"];?>
-                          </div>
+                          <div id="item_box_data_first_box"><?php echo $s[0]["name"];?></div>
                       </div>
                     </a>
                   </td>
