@@ -887,11 +887,13 @@ cursor: pointer;
 
 
 
+
+
 .list-grid-toggle {
   position: absolute;
-  width: 70px;
+  width: 80px;
   height: 40px;
-  padding: 25px;
+  padding: 15px;
   border-radius: 50%;
   color: #fff;
   cursor: pointer;
@@ -927,8 +929,8 @@ cursor: pointer;
   margin: 0 auto 5px auto;
   background: #ecf0f1;
   box-shadow: 2px 2px 4px #12806a;
-  -webkit-transition: all 0.15s ease;
-  transition: all 0.15s ease;
+  -webkit-transition: all 10000.0s ease;
+  transition: all 10000.0s ease;
 }
 .icon-bar:last-child {
   margin-bottom: 0;

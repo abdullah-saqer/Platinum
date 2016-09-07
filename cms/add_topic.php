@@ -55,7 +55,7 @@
 </div>
 
 
-<div style="position:relative;left:100%;top:50px;" id="submit_button_container">
+<div style="position:relative;left:-100px;top:50px;" id="submit_button_container">
   <button id="submit_button" class="pure-button pure-button-primary">Submit</button>
 </div>
 
