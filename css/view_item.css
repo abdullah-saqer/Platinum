@@ -156,8 +156,8 @@
 }
 
 #share_item_section{
-  position:absolute;
-  right:32px; 
+  position:relative;
+  float: right;
   margin-top:8px; 
   border-top:1px solid lightgray;
   border-right:1px solid lightgray;

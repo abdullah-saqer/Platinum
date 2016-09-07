@@ -148,6 +148,7 @@
 <div id="item_photo_adder">
 <?php
 	if(!empty($_FILES['file'])){
+
 	   foreach ($_FILES['file']['name'] as $key => $name) {
 		  $val=substr($name, -3);
 		  $val=strtolower($val);
@@ -159,13 +160,23 @@
 			$num=mysqli_num_rows($result);
 			$name=$num+1;
 			$name.=".".$val;
-		if(!(empty($_POST['primary_key'])) && $_FILES['file']['error'][$key]==0 && move_uploaded_file($_FILES['file']['tmp_name'][$key],'../items_photos/'.$name)){
+			$name2=$num+1;
+			$name2.="_Large.".$val;
+		if(!(empty($_POST['primary_key'])) && $_FILES['file']['error'][$key]==0 && 
+			move_uploaded_file($_FILES['file']['tmp_name'][$key],'../items_photos/'.$name) 
+			){
+
+			move_uploaded_file($_FILES['file']['tmp_name'][$key],'../items_photos/'.$name2);
+
 			$uploaded[]=$name;
+			$uploaded[]=$name2;
+
 			$key=$_POST['primary_key'];
 			$path='items_photos/'.$name;
 			$query="INSERT INTO `photos`(`id`, `item_id`, `photo_path`, `photo_name`) VALUES ('','$key','$path','$name')";
 			$GLOBALS['conn']->query($query);
 		}
+
 	}
 	if(!empty($_POST['ajax']))
 		die(json_encode($uploaded));

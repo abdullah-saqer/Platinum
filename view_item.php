@@ -47,6 +47,12 @@ require("functions/engine.php");
                      <a href="#">Lenovo ideapad</a> >
                       <a href="#">Flex 15</a>
                  </nav>
+                   <div id="share_item_section">
+                            <div>Share this item<br> on facebook</div>
+                            <div id="facebook_icon" title="share this item on facebook">
+                            <i class="fa fa-facebook-official" style="font-size:24px"></i>
+                            </div>
+                </div>
              </div>
 
              <div id="content_section">
@@ -119,12 +125,7 @@ require("functions/engine.php");
                         
                        -->
                      </div>
-                       <div id="share_item_section">
-                            <div>Share this item<br> on facebook</div>
-                            <div id="facebook_icon" title="share this item on facebook">
-                            <i class="fa fa-facebook-official" style="font-size:24px"></i>
-                            </div>
-                      </div>
+                      
                   </div>
              </div>
                   
