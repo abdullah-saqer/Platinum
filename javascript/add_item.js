@@ -157,8 +157,7 @@ $("#submit2").click(function(event){
 	event.preventDefault();
 	event.stopPropagation();
 	var fileInput=document.getElementById("file");
-	var fileInput2=fileInput;
-
+	
 	var data= new FormData();
 	var primary_key=$("#key_holder").text();
 
@@ -167,12 +166,8 @@ $("#submit2").click(function(event){
 
 	for(var i=0;i<fileInput.files.length;i++){
 		data.append('file[]',fileInput.files[i]);
-
-		fileInput2.files[i].name=fileInput2.files[i].name+"_Large";
-
-		data.append('file[]',fileInput2.files[i]);
+		data.append('file[]',fileInput.files[i]);
 	}
-	
 	
 	var request= new XMLHttpRequest();
 	request.upload.addEventListener('progress',function(event){

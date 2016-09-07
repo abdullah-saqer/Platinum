@@ -131,9 +131,11 @@
 
 #content_section{
   margin-top:10px;
-  display:-webkit-box; display:-moz-box;
+  display:block;
   -moz-box-orient:vertical; -webkit-box-orient:vertical;
-   -webkit-box-flex:1; -moz-box-flex:1;
+   display:-webkit-box; display:-moz-box;
+   -webkit-box-flex:1;
+   -moz-box-flex:1;
 }
 
 #item_title_bar{
@@ -156,8 +158,13 @@
 }
 
 #share_item_section{
+<<<<<<< HEAD
   position:relative;
   float: right;
+=======
+  position:absolute;
+  top:305px; left:1174.1px;
+>>>>>>> 9e0bff67ce01815b9809da8a29d9d04b8f8a2ae8
   margin-top:8px; 
   border-top:1px solid lightgray;
   border-right:1px solid lightgray;
