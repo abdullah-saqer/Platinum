@@ -174,8 +174,10 @@ $key=$_GET['key'];
 $query="DELETE FROM photos where id='$key'";
 $query2="SELECT * FROM photos";
 $result=$GLOBALS['conn']->query($query2);
-while($r=$result->fetch_assoc())
+while($r=$result->fetch_assoc()){
 	unlink("../".$r["photo_path"]);
+	
+}
 
 if($GLOBALS['conn']->query($query))
 	echo "Photo Deleted";

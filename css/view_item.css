@@ -158,19 +158,18 @@
 }
 
 #share_item_section{
-<<<<<<< HEAD
-  position:relative;
-  float: right;
-=======
   position:absolute;
   top:305px; left:1174.1px;
->>>>>>> 9e0bff67ce01815b9809da8a29d9d04b8f8a2ae8
   margin-top:8px; 
   border-top:1px solid lightgray;
   border-right:1px solid lightgray;
   border-bottom:1px solid lightgray;
   text-align:center;
 }
+@media screen and (max-width:1300px){#share_item_section{left:1136px;}}
+@media screen and (max-width:1000px){#share_item_section{left:976px;}} 
+@media screen and (max-width:800px){#share_item_section{left:776px;}} 
+
 #share_item_section div{
   padding:4px;
 }
