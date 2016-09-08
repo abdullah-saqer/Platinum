@@ -159,13 +159,18 @@
 
 #share_item_section{
   position:absolute;
-  top:305px; left:1174.1px;
+  top:305px; 
   margin-top:8px; 
   border-top:1px solid lightgray;
   border-right:1px solid lightgray;
   border-bottom:1px solid lightgray;
   text-align:center;
 }
+
+@media screen and (max-width:1440px){#share_item_section{left:1174.1px;;}}
+@media screen and (max-width:1248px){#share_item_section{left:1115px;}} 
+
+
 #share_item_section div{
   padding:4px;
 }
