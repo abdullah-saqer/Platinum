@@ -163,13 +163,12 @@
 			$name2=$num;
 			$name2.="_Large.".$val;
 
-			if($counter%2==1){
+			if($counter%2==1)
 				move_uploaded_file($_FILES['file']['tmp_name'][$key],'../items_photos/'.$name2);
-			}
 
 			if(!(empty($_POST['primary_key'])) && $_FILES['file']['error'][$key]==0 && 
 				move_uploaded_file($_FILES['file']['tmp_name'][$key],'../items_photos/'.$name)){
-				
+
 			$uploaded[]=$name;
 		
 			$key=$_POST['primary_key'];

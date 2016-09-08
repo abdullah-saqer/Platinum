@@ -30,13 +30,13 @@ $(document).ready(function(){
 				$("#nav_down_section").css({"display":"block"});
 					if($(window).width()<700)
 						$("#cart").animate({"left":"88%","top":"65%","fontSize":"35px"});
-						else $("#cart").animate({"left":"96%","top":"65%","fontSize":"35px"});
+						else $("#cart").animate({"left":"95%","top":"65%","fontSize":"35px"});
 				$(".scroll_to_top").fadeOut();
 				$("#arabic_label").css({"display":"block"});
 				$(".cart_info").css({"left":"-255px"});
 				$("#search").fadeOut();
 				$("#search_query").fadeOut('fast');
-				$("#middle_search").animate({"top":"-30px"});
+				$("#middle_search").animate({"top":"-25px"});
 				$("#login_header_bar_icon").animate({"left":"90%","top":"65%"});
 				$("#login_header_bar_icon").css({"fontSize":"33px"});
 				navFlag=!navFlag;

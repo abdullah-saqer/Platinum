@@ -114,29 +114,7 @@
 
 }
 
-#arabic_label{
-  position: absolute;
-  top:14px;
-  margin-left: 10px;
-  margin-right: 10px;
-  color:white;
-  font-weight: bold;
-  font-size: 15px;
-  text-decoration: none;
-  bottom:0px;
-  top:120px;
-  display: block;
-}
-#arabic_label a{
-  color:white;
-  text-decoration: none;
-}
-#arabic_label:hover{
-  cursor: pointer;
-}
-#arabic_label img{
-  width: 22px;
-}
+
 .scroll_to_top{
   width: 35px;
   height: 35px;
@@ -284,3 +262,25 @@
     background-color:rgba(220,40,40,1);
 }
 
+#arabic_label{
+  position: absolute;
+  margin-left: 10px;
+  margin-right: 10px;
+  color:white;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  bottom:0px;
+  top:129px;
+  display: block;
+}
+#arabic_label img{
+  width: 22px;
+}
+#arabic_label a{
+  color:white;
+  text-decoration: none;
+}
+#arabic_label:hover{
+  cursor: pointer;
+}
