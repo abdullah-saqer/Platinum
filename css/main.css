@@ -112,13 +112,14 @@ display:-moz-box;
 -moz-box-flex:1;
 }
 
-#navigator div.li{
+
+#navigator div{
   display:-webkit-box;
   display:-moz-box;
   -webkit-box-orient:horizontal;
   -moz-box-orient:horizontal;
-
 }
+
 
 #content{
 	width:calc(100% - 320px);
@@ -206,6 +207,8 @@ padding:22px;
 color:rgba(255,255,255,0.5);
 border-left:7px solid rgb(35,39,45);
 }
+
+
 #nav_button4:hover{
 border-left:7px solid rgb(255,255,102);
 color:rgba(255,255,255,0.9);
@@ -575,15 +578,12 @@ margin-left:35px;
 }
 #request_number{
 	border:2px solid rgb(100,100,25);
-    border-radius: 50px; 
+    margin-left:25px;
 	color:rgba(0,0,0,0.85);
-	text-align:center;
-	font-weight: bold;
+	text-align:;
+	font-weight:bold;
 	background-color: rgb(255,255,190);
-	display:-webkit-box;
+	height:25px; width:25px; border-radius:100px;
+	padding-left:3px; padding-top:3px;
+}
 
-}
-#request_number p{
-	position: relative;
-	margin:5px auto;
-}

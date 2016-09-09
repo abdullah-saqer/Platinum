@@ -53,26 +53,28 @@ checklogin();
 				?>
 			</div>
 			
-			<div id="nav_button"  onclick="getPage('Images_adder.php')" class="li">
+			<div id="nav_button"  onclick="getPage('Images_adder.php')" >
 				<i title="users" id="camera" class="fa fa-camera" style="font-size:18px"></i>&nbsp;&nbsp;&nbsp;&nbsp;
 				Images Slider
 			</div>
-			<div id="nav_button2"  onclick="getPage('add_topic.php')" class="li">
+			<div id="nav_button2"  onclick="getPage('add_topic.php')" >
 				<i class="fa fa-pencil-square" style="font-size:18px"></i>&nbsp;&nbsp;&nbsp;&nbsp;
 				Add Topic
 			</div>
 
-			<div id="nav_button3" onclick="getPage('add_item.php');" class="li">
+			<div id="nav_button3" onclick="getPage('add_item.php');" >
 				<i id="additem_icon" class="fa fa-cart-plus" style="font-size:18px"></i>&nbsp;&nbsp;&nbsp;&nbsp;
 				Add Item
 			</div>
-			<div id="nav_button4" onclick="getPage('request.php')" class="li">
+			<div id="nav_button4" onclick="getPage('request.php')" >
 				<i class="fa fa-mail-forward" style="font-size:18px"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-					Requests
-					<div class="animated rubberBand" id="request_number">5</div>
+					<div id="req">Requests</div>
+					<div class="animated rubberBand" id="request_number">
+					 5
+					</div>
 			</div>
 
-			<div id="nav_button5" onclick="getPage('log.php')" class="li">
+			<div id="nav_button5" onclick="getPage('log.php')" >
 				<i class="fa fa-bars" style="font-size:18px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
 					Log
 			</div>
