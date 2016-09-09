@@ -14,7 +14,7 @@ body{
 }
 #header{
 	width:100%;
-	height: 120px;
+	height: 73px;
 	border-bottom:0px solid black;
 	background-color: white;
 	-webkit-box-shadow: 2px 11px 19px -15px rgba(0,0,0,0.75);
@@ -49,8 +49,8 @@ cursor: pointer;
 #header_button i{
 	position: relative;
 	color:rgba(0,0,0,0.7);
-	font-size:45px;
-	top:0px;
+	font-size:37px;
+	top:50px;
 	transition: color 0.5s;
 }
 #header_button i:hover{
@@ -96,7 +96,7 @@ cursor: pointer;
 #navigator{
 background-color: rgb(35,39,45);
 width:282px;
-top:100px;
+top:72px;
 position: fixed;
 }
 #content{
@@ -445,6 +445,7 @@ footer{
 	margin-right: 20px;
 	margin-top: 17px;
 }
+
 #close_categories:hover{
 	cursor: pointer;
 	color:red;
@@ -536,7 +537,7 @@ margin-left:35px;
 }
 #header #header_logo{
 	width:280px;
-	height: 118px;
+	height: 70px;
 	border:1px solid rgb(39,137,207);
 	border-right:1px solid rgba(35,39,45,0.2);
 }
@@ -547,11 +548,11 @@ margin-left:35px;
 	position: relative;
 	margin-left: 5px;
 	margin-top: 7px;
-	width:80px;
+	width:50px;
 }
 #header_logo #logo_word{
 	position: relative;
-	width:180px;
+	width:130px;
 	top:-10px;
 }
 #request_number{
