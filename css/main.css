@@ -122,13 +122,14 @@ display:-moz-box;
 
 
 #content{
-	width:calc(100% - 320px);
+	width:calc(100% - 288px);
 	border:1px solid  rgba(51,51,51,0.4);
 	border-top-left-radius: 2px;
 	border-top-right-radius: 2px;
 	position: relative;
-	top:160px;
-	left:300px;
+	top:100px;
+	left:267px;
+	text-align:center;
 	padding-bottom: 100px;
 	margin-bottom: 250px;
 }
