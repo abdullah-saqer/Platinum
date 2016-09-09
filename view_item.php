@@ -26,12 +26,12 @@ require("functions/engine.php");
      <span><br><br><br><br><br><br><br><br></span>
     
  <div id="body"><!--this body insted of the real body ,, for any reasons-->
- <div id="share_item_section">
-        <div>Share this item<br> on facebook</div>
-        <div id="facebook_icon" title="share this item on facebook">
-         <i class="fa fa-facebook-official" style="font-size:24px"></i>
-        </div>
- </div>
+
+<span id="share_flag">Share</span>
+   <div id="share_item_section">
+    <img src="images/share.ico" />
+   </div>
+
      <div id="container">
         
         <div id="left_side">
