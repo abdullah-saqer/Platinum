@@ -13,7 +13,7 @@ $(document).ready(function(){
 	var cut=120;
 		$(document).scroll(function(){
 		var scroll_pos=$(document).scrollTop();
-		
+		/*
 		if(cut==120 && scroll_pos>=50){
 			cut=73;
 			$("#header").animate({"height":cut+"px"},"fast");
@@ -34,7 +34,7 @@ $(document).ready(function(){
 			$("#header_button i").hover(function(){$("#header_button p").css({"visibility":"visible"})});// for users button
 			$("#header_logo #img_logo").animate({"width":"80px"});
 			$("#header_logo #logo_word").animate({"width":"180px"});
-		}
+		}*/
 		
 	});
 	//Initilize the background shadow
