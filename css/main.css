@@ -37,6 +37,11 @@ body{
 	z-index: 3;
 	margin-right: 20px;
 }
+
+#header #header_button i{
+	font-size:35px;
+}
+
 #category{
 	width:50px;
 	position: relative;
@@ -573,10 +578,9 @@ margin-left:35px;
     border-radius: 50px; 
 	color:rgba(0,0,0,0.85);
 	text-align:center;
-	height:50px; width:70px;
-	padding:5px 12px 5px 12px;
 	font-weight: bold;
 	background-color: rgb(255,255,190);
+	display:-webkit-box;
 
 }
 #request_number p{

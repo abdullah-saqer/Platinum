@@ -69,7 +69,7 @@ checklogin();
 			<div id="nav_button4" onclick="getPage('request.php')" class="li">
 				<i class="fa fa-mail-forward" style="font-size:18px"></i>&nbsp;&nbsp;&nbsp;&nbsp;
 					Requests
-					<span class="animated rubberBand" id="request_number">5</span>
+					<div class="animated rubberBand" id="request_number">5</div>
 			</div>
 
 			<div id="nav_button5" onclick="getPage('log.php')" class="li">
