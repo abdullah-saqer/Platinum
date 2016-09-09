@@ -13,28 +13,6 @@ $(document).ready(function(){
 	var cut=120;
 		$(document).scroll(function(){
 		var scroll_pos=$(document).scrollTop();
-		/*
-		if(cut==120 && scroll_pos>=50){
-			cut=73;
-			$("#header").animate({"height":cut+"px"},"fast");
-			$("#header_logo").animate({"height":"70px"},"fast");
-			$("#navigator").animate({"top":"72px","height":navH+47+"px"},'fast');
-			$("#header_button i").animate({"font-size":"37px",top:"50px"});
-			$("#header_button i").hover(function(){$("#header_button p").css({"visibility":"hidden"})});//for users button
-			$("#header_button i").mouseout(function(){$("#header_button p").css({"visibility":"hidden"})});// for users button
-			$("#header_logo #img_logo").animate({"width":"50px"});
-			$("#header_logo #logo_word").animate({"width":"130px"});
-		}
-		else if(cut!=120 && scroll_pos<=10){
-			cut=120;
-			$("#header").animate({"height":cut+"px"},"fast");
-			$("#header_logo").animate({"height":"118px"},"fast");
-			$("#navigator").animate({"top":"120px","height":navH+"px"},'fast');
-			$("#header_button i").animate({"font-size":"45px",top:"0px"});
-			$("#header_button i").hover(function(){$("#header_button p").css({"visibility":"visible"})});// for users button
-			$("#header_logo #img_logo").animate({"width":"80px"});
-			$("#header_logo #logo_word").animate({"width":"180px"});
-		}*/
 		
 	});
 	//Initilize the background shadow
