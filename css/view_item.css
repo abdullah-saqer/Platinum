@@ -947,15 +947,25 @@ cursor: pointer;
  left:92%;
  top:45%;
 }
-#share_item_section:hover{
+#share_flag{
+ padding: 5px 7px 5px 7px;
+ position: absolute;
+ left:91%;
+ top:calc(45% - 40px);
+ display: none;
+}
+#share_item_section #share_icon:hover{
   cursor: pointer;
 }
-#share_item_section img:hover  #share_flag{
-  color: red;
+#share_icon{
+  -webkit-box-shadow: 10px 10px 25px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 25px -13px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 25px -13px rgba(0,0,0,0.75);
+  border-radius: 50px;
 }
 #share_item_section img{
   width:50px;
-  z-index: 10;
+  
   user-drag: none; 
   user-select: none;
   -moz-user-select: none;
@@ -963,21 +973,29 @@ cursor: pointer;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-
-  -webkit-box-shadow: 10px 10px 25px -13px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 25px -13px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 25px -13px rgba(0,0,0,0.75);
-}
-#share_flag{
- border:1px dashed black;
- padding: 5px 7px 5px 7px;
- position: absolute;
- left:91%;
- top:calc(45% - 40px);
-
- transition: opacity 0.5s;
 }
 
-
+#facebook_icon{
+  position:relative;
+   border-radius: 50px;
+  z-index: -1;
+  left:2px;
+  top:-37px;
+  width:45px;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: all 0.78s ease;
+}
+#share_item_section:hover #facebook_icon{
+  -ms-transform: rotate(25deg);
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+  top:0px;
+  left:-6px;
+  -webkit-box-shadow: -50px 29px 44px -35px rgba(0,0,0,0.75);
+  -moz-box-shadow: -50px 29px 44px -35px rgba(0,0,0,0.75);
+  box-shadow: -50px 29px 44px -35px rgba(0,0,0,0.75);
+}
 
 
