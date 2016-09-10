@@ -957,15 +957,10 @@ cursor: pointer;
 #share_item_section #share_icon:hover{
   cursor: pointer;
 }
-#share_icon{
-  -webkit-box-shadow: 10px 10px 25px -13px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 25px -13px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 25px -13px rgba(0,0,0,0.75);
-  border-radius: 50px;
-}
+
 #share_item_section img{
   width:50px;
-  
+  border-radius: 50px;
   user-drag: none; 
   user-select: none;
   -moz-user-select: none;
@@ -974,14 +969,20 @@ cursor: pointer;
   -webkit-user-select: none;
   -ms-user-select: none;
 }
-
+#share_icon{
+  -webkit-box-shadow: 10px 10px 25px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 25px -13px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 25px -13px rgba(0,0,0,0.75);
+  display: block;
+}
 #facebook_icon{
   position:relative;
-   border-radius: 50px;
+  display: block;
   z-index: -1;
   left:0%;
   top:-38%;
-  width:45px;
+
+
   -ms-transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
