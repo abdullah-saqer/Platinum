@@ -31,13 +31,15 @@
       "margin-top":"20px",
     });
 
-  });
+  });//
   </script>
 
 
 <div id="paragraph_box">
   <p id="heads_up">Create a new topic</p>
   </div>
+  
+  <div id="add_topic_content_container">
 
 <form id="usr" class="pure-form pure-form-stacked">
   <div class="pure-g">
@@ -50,16 +52,23 @@
 
 </form>
 
-<div style="border:0px solid black;"class="wysiwyg_container">
+<div  id="wysiwyg_box">
   <div id="editor"></div>
 </div>
 
 
-<div style="position:relative;left:-100px;top:50px;" id="submit_button_container">
+<div id="submit_button_container">
+  <div></div>
   <button id="submit_button" class="pure-button pure-button-primary">Submit</button>
 </div>
-
+<!--
+  #add_topic_content_container #usr,#add_topic_content_container #wysiwyg_box,#add_topic_content_container #usr,#add_topic_content_container #submit_button_container{
+  margin:20px;
+  margin-left:50px;
+}
+-->
   
+</div>
 
 <br><br><br><br><br><br>
 
