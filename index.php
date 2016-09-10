@@ -17,7 +17,8 @@ require("functions/engine.php");
 </head>
 <body style="padding:0px; margin:0px;font-family:Arial, sans-serif">
     <?php printNavBar();?>
-    <span><br><br><br><br><br><br><br><br></span>
+
+    <span><br><br><br><br><br><br></span>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script>

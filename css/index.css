@@ -82,13 +82,13 @@
       filter: grayscale(100%);
   }
   .navbar {
-    margin-bottom: 0;
+    position: relative;
     background-color: #2d2d30;
     border: 0;
     font-size: 11px !important;
     letter-spacing: 4px;
     opacity:0.9;
-    height: 160px;
+    height: 120px;
   }
   #navbar{
   	background-color:rgba(21,22,25,1);
@@ -285,7 +285,7 @@ z-index: 5;
   font-size: 15px;
   text-decoration: none;
   bottom:0px;
-  top:129px;
+  top:90px;
   display: block;
 }
 #arabic_label img{
@@ -747,5 +747,9 @@ cursor: pointer;
 .login_header_button:hover {
     background-color:rgba(220,40,40,1);
 }
-
+#jssor_1{
+position: relative;
+top:20px;
+margin-top: 20px;
+}
 

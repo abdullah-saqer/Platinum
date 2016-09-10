@@ -24,7 +24,7 @@ $(document).ready(function(){
 			navFlag=!navFlag;
 		}
 		else if(scrollVal<100 && navFlag){
-				$("#navbar").animate({"height":"160px"},'fast');
+				$("#navbar").animate({"height":"120px"},'fast');
 				$("#logo_logo").fadeOut("fast");
 				$("#logo_logo_logo").fadeIn("fast");
 				$("#nav_down_section").css({"display":"block"});
