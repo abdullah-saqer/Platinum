@@ -985,7 +985,7 @@ cursor: pointer;
   -ms-transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
-  transition: all 0.7s ease;
+  transition: all 0.78s ease;
 }
 #share_item_section:hover #facebook_icon{
   -ms-transform: rotate(25deg);
