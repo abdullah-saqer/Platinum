@@ -15,39 +15,47 @@
   <script src="../ckeditor/ckeditor.js"></script>
   <script type="text/javascript" src="../ckeditor/samples/js/sample.js"></script>
   <!--  -->
+  
+<div id = "add_item_content_box">
 
  	<div id="adder">
-			<div id="paragraph_box">
-				<p>These are the items you have , <u>add/edit/delete</u> the items you want.</p>
-			</div>
+       <div id="paragraph_box">
+		 <p>These are the items you have , <u>add/edit/delete</u> the items you want.</p>
+		</div>
 	</div>
 
-<div id="option_bar">
-<form class="pure-form">
-   <label id="search_label">Search</label>
-   <input id="search" class="pure-input-rounded" type="text" placeholder="Type Something">
-   &nbsp;&nbsp;&nbsp;
+  <div id="option_bar_and_ai_icon_box">
+    <div id="option_bar">
+		
+		<form class="pure-form">
+		   <label id="search_label">Search</label>
+		   <input id="search" class="pure-input-rounded" type="text" placeholder="Type Something">
+		   &nbsp;&nbsp;&nbsp;
 
-   <label id="select_label">
-   Select Category
-   &nbsp;&nbsp;
-   </label>
-    <select class="select_item_category" id="state">
-    	<option id="select_item" value="0">ALL</option>
-     <?php
-      $cat=getCategories();
-       foreach ($cat as $key => $value) 
-       echo'<option id="select_item" value="'.$key.'">'.$value.'</option>'; 		
-     ?>
-   </select>
-</form>
+		   <label id="select_label">
+		   Select Category
+		   &nbsp;&nbsp;
+		   </label>
+		    <select class="select_item_category" id="state">
+		    	<option id="select_item" value="0">ALL</option>
+		     <?php
+		      $cat=getCategories();
+		       foreach ($cat as $key => $value) 
+		       echo'<option id="select_item" value="'.$key.'">'.$value.'</option>'; 		
+		     ?>
+		   </select>
+		</form>
+	 </div>
 
-</div>
+   <i title="Add new item" id="add_item_icon" class="fa fa-cart-plus"></i>
+  </div>
 
-<i title="Add new item" id="add_item_icon" class="fa fa-cart-plus"></i>
-
-<div id="add_item_box">
+  <div id="add_item_box">
+	
+	<div id="aib_icon_box">
 	<i id="close_add_item_window" class="fa fa-close"></i>
+    </div>
+
 	<div id="add_item_form">
 		<form id="add_item_form_styling" class="pure-form pure-form-stacked">
 			<table id="table_add_item" border="0">
@@ -131,19 +139,20 @@
      			});
 			</script>
 		</form>
-		<button id="add_item_submit_button" class="pure-button pure-button-primary">Submit</button>
 	</div>
+      <div id="add_item_sb_btn_box">
+      	<button id="add_item_submit_button" class="pure-button pure-button-primary">Submit</button>
+      </div>
+  </div>
 
-</div>
-
-<div id="view_item_box">
-<?php print_Items(); ?>
-</div>
+ <div id="view_item_box">
+  <?php print_Items(); ?>
+ </div>
 
 <div id="edit_item_box">
-<i id="close_edit_item_window" class="fa fa-close"></i>
-<i id="item_images_icon" class="fa fa-image"></i>
-<i id="item_window_back" class="fa fa-toggle-left"></i>
+ <i id="close_edit_item_window" class="fa fa-close"></i>
+ <i id="item_images_icon" class="fa fa-image"></i>
+ <i id="item_window_back" class="fa fa-toggle-left"></i>
 
 <div id="item_photo_adder">
 <?php
@@ -280,5 +289,7 @@
 		<span style="display:none;" id="key_holder"></span>
 		<button id="add_item_submit_button2" class="pure-button pure-button-primary">Update</button>
 	</div>
-</div>
+  </div>
+ </div>
+
 </div>

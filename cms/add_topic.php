@@ -34,12 +34,11 @@
   });//
   </script>
 
-
 <div id="paragraph_box">
   <p id="heads_up">Create a new topic</p>
   </div>
-  
-  <div id="add_topic_content_container">
+
+<div id="add_topic_content_container">
 
 <form id="usr" class="pure-form pure-form-stacked">
   <div class="pure-g">
