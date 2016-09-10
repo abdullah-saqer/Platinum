@@ -51,14 +51,15 @@
   </div>
 
   <div id="add_item_box">
-	
-	<div id="aib_icon_box">
-	<i id="close_add_item_window" class="fa fa-close"></i>
-    </div>
+
+	<div id="aib_icon_top_container">
+	   <div id="ic"><i id="close_add_item_window" class="fa fa-close"></i></div>
+	</div>
 
 	<div id="add_item_form">
+
 		<form id="add_item_form_styling" class="pure-form pure-form-stacked">
-			<table id="table_add_item" border="0">
+			<table id="table_add_item" border="0" >
 				<tr>
 					<legend><strong>Adding New Item</strong></legend>
 				</tr>
@@ -140,8 +141,11 @@
 			</script>
 		</form>
 	</div>
+      
       <div id="add_item_sb_btn_box">
-      	<button id="add_item_submit_button" class="pure-button pure-button-primary">Submit</button>
+        <div id="bb">
+        	<button id="add_item_submit_button" class="pure-button pure-button-primary">Submit</button>
+        </div>
       </div>
   </div>
 

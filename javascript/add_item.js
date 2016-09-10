@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("#editor_container").css({"margin-top":"50px"});
+	$("#editor_container").css({"margin-top":"20px"});
 
 	$("#add_item_icon").click(function(){
 		$("#background_shadow").css({display:'none',height:$(document).height()});
