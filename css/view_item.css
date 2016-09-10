@@ -979,8 +979,8 @@ cursor: pointer;
   position:relative;
   display: block;
   z-index: -1;
-  left:0%;
-  top:-38%;
+  left:0px;
+  top:-38px;
 
 
   -ms-transform: rotate(0deg);
@@ -992,8 +992,8 @@ cursor: pointer;
   -ms-transform: rotate(25deg);
   -webkit-transform: rotate(25deg);
   transform: rotate(25deg);
-  top:2%;
-  left:-6%;
+  top:2px;
+  left:-6px;
   -webkit-box-shadow: -50px 29px 44px -35px rgba(0,0,0,0.75);
   -moz-box-shadow: -50px 29px 44px -35px rgba(0,0,0,0.75);
   box-shadow: -50px 29px 44px -35px rgba(0,0,0,0.75);
