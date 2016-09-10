@@ -28,8 +28,10 @@ require("functions/engine.php");
  <div id="body"><!--this body insted of the real body ,, for any reasons-->
 
 <span id="share_flag">Share</span>
+
    <div id="share_item_section">
-    <img src="images/share.ico" />
+      <img id="share_icon" src="images/share.png" />
+      <img id="facebook_icon" src="images/facebook.png" />
    </div>
 
      <div id="container">
