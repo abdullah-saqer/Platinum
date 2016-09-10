@@ -153,6 +153,8 @@
   <?php print_Items(); ?>
  </div>
 
+
+
 <div id="edit_item_box">
  <i id="close_edit_item_window" class="fa fa-close"></i>
  <i id="item_images_icon" class="fa fa-image"></i>
