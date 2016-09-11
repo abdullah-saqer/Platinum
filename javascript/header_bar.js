@@ -8,19 +8,20 @@ $(document).ready(function(){
 			$("#logo_logo_logo").fadeOut("fast");
 			$("#logo_logo").fadeIn("fast");
 			$("#nav_down_section").css({"display":"none"});
-			var left_cart_animation="17%";
+			var left_cart_animation="16%";
 			  if($(window).width()<700)
 			  		left_cart_animation="28%";
 
-			$("#cart").animate({"left":left_cart_animation,"top":"10px","fontSize":"25px"});
+			$("#cart").animate({"left":left_cart_animation,"top":"28%","fontSize":"25px"});
 			$(".scroll_to_top").fadeIn();
 			$("#arabic_label").css({"display":"none"});
 			$(".cart_info").css({"left":"5px"});
 			$("#search").fadeIn('fast');
 			$("#middle_search").animate({"top":"-40px"});
-			$("#login_header_bar_icon").animate({"left":"13%","top":"18%"});
+			$("#login_header_bar_icon").animate({"left":"13%","top":"30%"});
 			$("#login_header").css({"display":"none"});
 			$("#login_header_bar_icon").css({"fontSize":"25px"});
+			$("#my_account_header_icon").animate({"left":"20%","top":"30%","fontSize":"25px"});
 			navFlag=!navFlag;
 		}
 		else if(scrollVal<100 && navFlag){
@@ -30,15 +31,16 @@ $(document).ready(function(){
 				$("#nav_down_section").css({"display":"block"});
 					if($(window).width()<700)
 						$("#cart").animate({"left":"88%","top":"65%","fontSize":"35px"});
-						else $("#cart").animate({"left":"95%","top":"65%","fontSize":"35px"});
+						else $("#cart").animate({"left":"96%","top":"70%","fontSize":"28px"});
 				$(".scroll_to_top").fadeOut();
 				$("#arabic_label").css({"display":"block"});
 				$(".cart_info").css({"left":"-255px"});
 				$("#search").fadeOut();
 				$("#search_query").fadeOut('fast');
 				$("#middle_search").animate({"top":"-25px"});
-				$("#login_header_bar_icon").animate({"left":"90%","top":"65%"});
-				$("#login_header_bar_icon").css({"fontSize":"33px"});
+				$("#login_header_bar_icon").animate({"left":"86%","top":"70%"});
+				$("#login_header_bar_icon").css({"fontSize":"28px"});
+				$("#my_account_header_icon").animate({"left":"91%","top":"70%","fontSize":"28px"});
 				navFlag=!navFlag;
 				
 			}
@@ -76,6 +78,7 @@ $("#login_header_bar_icon").hover(function(){
 		 },1000);
 });
 
+
 var flag_header_login=false;
 $("#login_header_bar_icon").click(function(){
 	
@@ -83,7 +86,7 @@ $("#login_header_bar_icon").click(function(){
 	if(!flag_header_login){
 		$(function () {
 		box.fadeIn();
-		box.animate({"left":"50%"},{queue:false});
+		box.animate({"left":"45%"},{queue:false});
 		});
 	}
 	else{

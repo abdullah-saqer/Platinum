@@ -329,11 +329,9 @@ z-index: 5;
 #cart{
   position: absolute;
   color:rgba(255,255,255,0.9);
-  font-size:35px;
-  left:95%;
-  width:50px;
-  height: 40px;
-  top:65%;
+  font-size:28px;
+  left:96%;
+  top:70%;
 }
 #cart:hover{
   cursor: pointer;
@@ -703,12 +701,12 @@ cursor: pointer;
 
 }
 #login_header_bar_icon{
-  color:rgba(255,255,255,0.9);
-  font-size: 33px;
+ color:rgba(255,255,255,0.9);
+  font-size: 28px;
   float: right;
   position: absolute;
-  left:90%;
-  top:65%;
+  left:86%;
+  top:70%;
 }
 #login_header_bar_icon:hover{
   color:white;
@@ -752,4 +750,15 @@ position: relative;
 top:20px;
 margin-top: 20px;
 }
-
+#my_account_header_icon{
+   color:rgba(255,255,255,0.9);
+  font-size: 28px;
+  float: right;
+  position: absolute;
+  left:91%;
+  top:70%;
+}
+#my_account_header_icon:hover{
+  color:white;
+  cursor: pointer;
+}

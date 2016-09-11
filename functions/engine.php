@@ -150,7 +150,7 @@ function printNavBar(){
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home">HOME</a></li>
+        <li><a href="index.php">HOME</a></li>
         <li><a href="#band">ITEMS</a></li>
         <li><a href="#tour">POSTS</a></li>
         <li><a href="#contact">CONTACT</a></li>
@@ -171,6 +171,11 @@ function printNavBar(){
   <i title="Cart" id="cart" class="fa fa-shopping-cart">
   <div class="cart_info">(0)Items | 00.00JD</div>
   </i>
+
+  <a>
+    <i title="My Account" id="my_account_header_icon" class="fa fa-user"></i>
+  </a>
+
   <div id="login_header">
   		<span class="login_information_holder">
         <button class="login_header_button">Login</button>
@@ -179,8 +184,8 @@ function printNavBar(){
 		 </span>
   </div>
 	 <a href="#">
-  		<i title="Login" id="login_header_bar_icon" class="fa fa-user"></i>
-  	</a>
+      <i title="Login" id="login_header_bar_icon" class="fa fa-unlock-alt"></i>
+   </a>
 
   <span id="arabic_label">
   <a href="#">
