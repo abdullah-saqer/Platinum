@@ -70,7 +70,7 @@ checklogin();
 				<i class="fa fa-mail-forward" style="font-size:18px"></i>&nbsp;&nbsp;&nbsp;&nbsp;
 					<div id="req">Requests</div>
 					<div class="animated rubberBand" id="request_number">
-					 5
+					 	<p>5</p>
 					</div>
 			</div>
 

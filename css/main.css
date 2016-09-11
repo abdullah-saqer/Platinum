@@ -581,10 +581,15 @@ margin-left:35px;
 	border:2px solid rgb(100,100,25);
     margin-left:25px;
 	color:rgba(0,0,0,0.85);
-	text-align:;
 	font-weight:bold;
 	background-color: rgb(255,255,190);
-	height:25px; width:25px; border-radius:100px;
-	padding-left:3px; padding-top:3px;
+	height:25px;
+	width:25px;
+	border-radius:100px;
+	
 }
-
+#request_number p{
+	position: relative;
+	margin-left: 8px;
+	margin-top: 7px;
+}
