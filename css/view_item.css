@@ -945,13 +945,13 @@ cursor: pointer;
 #share_item_section{
  position: absolute;
  left:92%;
- top:45%;
+ top:260px;
 }
 #share_flag{
  padding: 5px 7px 5px 7px;
  position: absolute;
- left:91%;
- top:calc(45% - 40px);
+ left:calc(91% + 3px);
+ top:220px;
  display: none;
 }
 #share_item_section #share_icon:hover{

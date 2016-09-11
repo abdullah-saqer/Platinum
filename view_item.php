@@ -58,6 +58,7 @@ require("functions/engine.php");
              </div>
 
              <div id="content_section">
+
                   <div id="item_title_bar">
                     Lenovo Ideapad Flex 15
                   </div>
