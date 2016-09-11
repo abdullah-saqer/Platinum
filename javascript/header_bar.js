@@ -9,8 +9,16 @@ $(document).ready(function(){
 			$("#logo_logo").fadeIn("fast");
 			$("#nav_down_section").css({"display":"none"});
 			var left_cart_animation="16%";
+			var my_account_icon="20%";
+
 			  if($(window).width()<700)
 			  		left_cart_animation="28%";
+			  	else if($(window).width()>=1400){
+			  				left_cart_animation="10%";
+			  			     my_account_icon="16%";
+			  			}
+
+			
 
 			$("#cart").animate({"left":left_cart_animation,"top":"28%","fontSize":"25px"});
 			$(".scroll_to_top").fadeIn();
@@ -21,7 +29,7 @@ $(document).ready(function(){
 			$("#login_header_bar_icon").animate({"left":"13%","top":"30%"});
 			$("#login_header").css({"display":"none"});
 			$("#login_header_bar_icon").css({"fontSize":"25px"});
-			$("#my_account_header_icon").animate({"left":"20%","top":"30%","fontSize":"25px"});
+			$("#my_account_header_icon").animate({"left":my_account_icon,"top":"30%","fontSize":"25px"});
 			navFlag=!navFlag;
 		}
 		else if(scrollVal<100 && navFlag){
