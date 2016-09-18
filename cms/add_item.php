@@ -281,8 +281,9 @@
 			</table>
 
 
-			<div id="text_editor">
-				<strong>Description</strong>
+			<div id="text_editor_at_the_edit_item_box">
+				<div id="describtion_strong">Description</div>
+			  
 			  <div id="editorEditItem"></div>
 			
 			</div>

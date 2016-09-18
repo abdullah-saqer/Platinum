@@ -81,7 +81,12 @@ box-shadow: inset 14px -28px 37px -48px rgba(0,0,0,0.75);
 	color:rgba(0,0,0,0.7);
 	margin-top:5px;
 }
-
+#search{
+	width:450px;
+}
+#search:hover{
+	cursor: auto;
+}
 #view_item_box{
 	/*display:inline-block;*/
     padding:5px;
@@ -130,6 +135,8 @@ box-shadow: inset 14px -28px 37px -48px rgba(0,0,0,0.75);
 	background-color:white;
 	width:240px; height:56px;
 	padding:5px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
 }
 #item_name p{
 	font-size:12px;
@@ -167,13 +174,11 @@ box-shadow: inset 14px -28px 37px -48px rgba(0,0,0,0.75);
 #add_item_icon{
 	font-size:50px;
 	color:lightgreen;
-	transition:color 0.5s,font-size 0.5s;
-	position:absolute; right:20px;
+	transition:color 0.5s;
 }
 #add_item_icon:hover{
 	cursor: pointer;
 	color:rgb(114,208,114);
-	font-size: 60px;
 }
 #add_item_box{
 	/*
@@ -268,6 +273,17 @@ box-shadow: inset 14px -28px 37px -48px rgba(0,0,0,0.75);
 	-moz-box-flex:1;
 }
 
+#text_editor_at_the_edit_item_box{
+	padding-top:30px;
+	padding-bottom:20px;
+}
+
+#text_editor_at_the_edit_item_box #describtion_strong{
+	font-size:15px;
+	font-weight:bold;
+	margin-bottom:20px;
+}
+
 #add_item_sb_btn_box{
 	-webkit-box-orient:horizontal;
 	-moz-box-orient:horizontal;
@@ -289,14 +305,13 @@ box-shadow: inset 14px -28px 37px -48px rgba(0,0,0,0.75);
 #add_item_submit_button{
 	z-index: 100;
 }
-/*
+
 #add_item_submit_button2{
 	position: relative;
-	top:-55px;
 	float: right;
 	z-index: 100;
 }
-*/
+
 
 
 
@@ -304,26 +319,24 @@ box-shadow: inset 14px -28px 37px -48px rgba(0,0,0,0.75);
 #edit_item_box{
 	position: fixed;
 	width:920px;
-	height: 560px;
 	z-index: 1051;
 	background-color: white;
-	border:1px solid rgba(0,0,0,0.5);
+	border:3px solid rgba(0,0,0,0.5);
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
-	left:150px;
+	left:220px;
 	top:0px;
 	padding:8px;
 	margin:10px;
 	display: none;
 }
 #close_edit_item_window{
-	position: relative;
 	color:rgba(0,0,0,0.7);
 	transition:color 0.5s;
 	float:right;
-	margin-top: 10px;
-	margin-right: 10px;
-	font-size: 25px;
+	margin-top:10px;
+	margin-right:10px;
+	font-size:25px;
 }
 #close_edit_item_window:hover{
 	color:red;
@@ -339,9 +352,9 @@ width:200px;
 	width:70px;
 }
 #item_images_icon{
-	position: absolute;;
+	position:absolute;
 	right:0px;
-	left:895px;
+	left:893px;
 	top:80px;
 	font-size: 30px;
 	color:lightblue;
@@ -367,10 +380,9 @@ width:200px;
 }
 #item_photo_adder{
   display: none;
-  border:1px solid rgba(0,0,0,0.5);
+  border:2px solid rgba(0,0,0,0.5);
   width:880px;
-  height: 550px;
-  border-radius: 4px;
+  height:550px;
 }
 
 #main_contents{
@@ -382,10 +394,11 @@ width:200px;
             width: 815px;
             height: 70px;
             background: #e6ffe6;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
             padding: 32px;
-            padding-bottom: 45px;
+            padding-right:33px;
+            padding-bottom:0px;
+            padding-top:20px;
+            border-bottom:2px solid rgba(0,0,0,0.5);
    }
 
         #line {
@@ -409,14 +422,14 @@ width:200px;
             background-color: #5cd65c;
             float: left;
             left: 12em;
-            height: 1.4em;
-            width: 12em;
+            height: 18px;
+            width: 200px;
             padding: 10px 15px;
             padding-bottom: 15px;
             text-align: center;
             color: white;
             border-radius: 5px;
-            
+            transition:background-color 500ms;
         }
 
             .myLabel:hover {
@@ -426,7 +439,7 @@ width:200px;
 
             .myLabel span {
                 font-size: 14pt;
-                
+                cursor:pointer;
             }
 
             .myLabel  input[type="file"] {
@@ -435,9 +448,11 @@ width:200px;
                 top: 2pt;
                 z-index: 2;
                 opacity: 0;
-                height: 2.5em;
-                width: 14em;
+                height: 38px;
+                width: 228px;
                 color:red;
+                cursor:pointer;
+                border:1px solid red;
             }
 
         input[type="submit"] {
@@ -462,7 +477,7 @@ cursor: pointer;
 	position: relative;
 	width:848px;
 	height: 360px;
-	top:70px;
+	top:30px;
 	left:-20px;
 	padding:8px;
 }
