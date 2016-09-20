@@ -14,7 +14,6 @@ require("functions/engine.php");
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate_css.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="javascript/jquery.imageLens.js"></script>
     <script type="text/javascript" src="javascript/view_item.js"></script>
     <!-- #endregion Jssor Slider End -->
     <title>Platinum</title>
@@ -69,12 +68,7 @@ require("functions/engine.php");
                                  <tr>
                                   <td colspan="3">
                                     <img src="nadeem.png" id="primary_photo" >
-                                    <script type="text/javascript">
-                                      $('#primary_photo').imageLens({
-                                        lensSize:200,
-                                        borderColor:"#b3b3ff"
-                                      });
-                                    </script>
+                                    
                                   </td>
                                 </tr>
                                 <!-- -->

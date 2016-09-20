@@ -24,7 +24,8 @@
   -moz-box-direction:reverse;
    background-color:rgb(245, 245, 240);
   */
-  
+  margin-top:0px;
+
 }
 
 #left_side{
@@ -84,17 +85,17 @@
 }
 
 #right_side #top_nav_bar{
-   width:100%; 
+  width:100%; 
   display:-webkit-box; 
   display:-moz-box;
   -moz-box-orient:horizontal;
   -webkit-box-orient:horizontal;
-   /*-webkit-box-flex:1; -moz-box-flex:1;*/
+  /*-webkit-box-flex:1; -moz-box-flex:1;*/
   background-color:white;
   color:black;
   padding:10px 10px 10px 10px;
   border-bottom:2px solid lightgray;
-   margin-bottom:15px;
+  margin-bottom:15px;
 }
 
 #directory{
@@ -140,11 +141,15 @@
 
 #item_title_bar{
   padding:10px;
-  background:rgba(100 , 130 , 130 , 0.9);
   font-size:20px;
   font-weight:bold;
-  border-top-right-radius:3px;
-  border-top-left-radius:3px;
+  border:0.5px solid rgba(0,0,0,0.2);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#303030+0,000000+100&0.63+0,0.47+7,0.5+14,0.51+22,0+100 */
+  background: -moz-linear-gradient(left,  rgba(48,48,48,0.63) 0%, rgba(45,45,45,0.47) 7%, rgba(42,42,42,0.5) 14%, rgba(38,38,38,0.51) 22%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(48,48,48,0.63) 0%,rgba(45,45,45,0.47) 7%,rgba(42,42,42,0.5) 14%,rgba(38,38,38,0.51) 22%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(48,48,48,0.63) 0%,rgba(45,45,45,0.47) 7%,rgba(42,42,42,0.5) 14%,rgba(38,38,38,0.51) 22%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1303030', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
 }
 
 #content_box{
@@ -186,10 +191,10 @@
   -webkit-box-flex:1; 
   -moz-box-flex:1;
   margin-top:8px;
-   display:-moz-box;
-    -moz-box-orient:vertical;
-    display:-webkit-box;
-    -webkit-box-orient:vertical;
+  display:-moz-box;
+  -moz-box-orient:vertical;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
 }
 
 #item_info , #item_price_section , #add_to_cart_button_section , #add_item_section{
