@@ -1,4 +1,4 @@
-
+/*
 #item_request_box{
   display:block;
   padding:20px;
@@ -9,15 +9,15 @@
   -webkit-box-flex:1; -moz-box-flex:1;
 }
 
-/* styling the title table .. */
+
 #table_box{
-   /*border-bottom:none;*/
+   
    border-collapse:collapse;
 }
 #table_box:hover{
 	cursor: pointer;
 }
-/* styling td inside the table who have the class(title_box)*/
+
 #table_box td{
    padding:12px 20px;
    font-size:15pt;
@@ -42,7 +42,6 @@
 	background:white;
 	border-bottom-right-radius:5px;
 	border-bottom-left-radius:5px;
-	/*display:none;*/
 	display:-webkit-box; display:-moz-box;
   -webkit-box-orient:vertical;
   -moz-box-orient:vertical;
@@ -156,3 +155,4 @@
     background:rgb(204, 255, 204);
     cursor: pointer;
 }
+*/
