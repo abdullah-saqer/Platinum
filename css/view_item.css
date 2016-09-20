@@ -1006,5 +1006,38 @@ cursor: pointer;
   -moz-box-shadow: -50px 29px 44px -35px rgba(0,0,0,0.75);
   box-shadow: -50px 29px 44px -35px rgba(0,0,0,0.75);
 }
-
-
+@font-face {
+    font-family: price;
+    src: url(../fonts/Kelvinch-Bold.otf);
+}
+#price_tag{
+  position: absolute;
+  top:235px;
+  width:200px;
+  z-index:5;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+#price_tag_value{
+  position: absolute;
+  color:white;
+  z-index:6;
+  margin-left: 70px;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  font-family: price;
+  font-size: 28px;
+  top:263px;
+}
