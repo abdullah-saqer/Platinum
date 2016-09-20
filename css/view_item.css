@@ -24,7 +24,7 @@
   -moz-box-direction:reverse;
    background-color:rgb(245, 245, 240);
   */
-  margin-top:0px;
+  margin-top:-50px;
 
 }
 
@@ -188,8 +188,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1565656', e
 
 #item_info_box{
   border:1px solid lightgray;
-  -webkit-box-flex:1; 
-  -moz-box-flex:1;
+  height:318px; width:438px;
   margin-top:8px;
   display:-moz-box;
   -moz-box-orient:vertical;
@@ -197,9 +196,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1565656', e
   -webkit-box-orient:vertical;
 }
 
-#item_info , #item_price_section , #add_to_cart_button_section , #add_item_section{
+#item_info  , #item_price_section , #add_item_section{
    padding:15px;
    border-bottom:1px solid lightgray;
+}
+
+#add_to_cart_button_section{
+  padding:15px;
 }
 
 #item_info table{
