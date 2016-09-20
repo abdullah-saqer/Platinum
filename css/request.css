@@ -3,13 +3,16 @@
   display:block;
   padding:20px;
   background:rgb(235, 235, 224);
+  display:-webkit-box; display:-moz-box;
+  -webkit-box-orient:vertical;
+  -moz-box-orient:vertical;
+  -webkit-box-flex:1; -moz-box-flex:1;
 }
 
 /* styling the title table .. */
 #table_box{
    /*border-bottom:none;*/
    border-collapse:collapse;
-
 }
 #table_box:hover{
 	cursor: pointer;
@@ -32,23 +35,27 @@
 	background:rgb(179, 255, 179);
 }
 
+
 #Content_Box{
 	border-top:1.8px solid rgb(214, 214, 194);
 	padding:0px 8px 8px 8px;
 	background:white;
 	border-bottom-right-radius:5px;
 	border-bottom-left-radius:5px;
-	display: none;
+	/*display:none;*/
+	display:-webkit-box; display:-moz-box;
+  -webkit-box-orient:vertical;
+  -moz-box-orient:vertical;
+  -webkit-box-flex:1; -moz-box-flex:1;
 }
 
 #Content_Box #top_bar{
 	height:5px;
     width:650px;
-    position: relative;
 	background:rgb(153, 255, 153);
 	border-bottom-right-radius:5px;
 	border-bottom-left-radius:5px;
-	bottom: 0px;
+
 }
 
 #Customer_Request_Box_Background{
