@@ -255,12 +255,16 @@ echo'
 
 
 function printCategoriesLeftBox(){
+  $query="SELECT * FROM categories";
+  $result=$GLOBALS['conn']->query($query);
 
 	echo'<div id="ctgs_box">
                <div id="title">Categories</div>
-               <table id="ctgs_box_table">
-                 <tr><td><a href=""><div>Laptops</div></a></td></tr>
-                 <tr><td><a href=""><div>Laptops</div></a></td></tr>
+               <table id="ctgs_box_table">';
+                while($row=$result->fetch_assoc())
+                  echo'<tr><td><a href="view_items.php?filterByCategory=1&id='.$row['id'].'"><div>'.$row['Name'].'</div></a></td></tr>';
+               
+                 echo'
                </table>
             </div>';
 
@@ -270,17 +274,14 @@ function printFilterBrandLeftBox(){
 	echo '
             <div id="fbb_box">
               <div id="title">Filter By Brand</div>
-              <table id="fbb_box_table">
-                 <tr><td><a href=""><div>item1</div></a></td></tr>
-                 <tr><td><a href=""><div>item1</div></a></td></tr>
-                 <tr><td><a href=""><div>item1</div></a></td></tr>
-                 <tr><td><a href=""><div>item1</div></a></td></tr>
-                 <tr><td><a href=""><div>item1</div></a></td></tr>
-                 <tr><td><a href=""><div>item1</div></a></td></tr>
-                 <tr><td><a href=""><div>item1</div></a></td></tr>
-                 <tr><td><a href=""><div>item1</div></a></td></tr>
-                 <tr><td><a href=""><div>item1</div></a></td></tr>
-                 <tr><td><a href=""><div>item1</div></a></td></tr>
+              <table id="fbb_box_table">';
+              $query="SELECT DISTINCT Brand FROM `items`";
+              $result=$GLOBALS['conn']->query($query);
+              while($row=$result->fetch_assoc())
+                echo'<tr><td><a href="view_items.php?filterByBrand=1&id='.$row['Brand'].'"><div>'.$row['Brand'].'</div></a></td></tr>';
+              
+
+                 echo'
                </table>
             </div>';    
         
