@@ -69,7 +69,7 @@ require("functions/engine.php");
                       </div>
  
                       <div id="search_field">
-                         <input type="search" placeholder="search item .." />
+                         <input type="search" placeholder="Search for an item name/brand/product code" />
                       </div>
              
 

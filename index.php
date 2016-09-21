@@ -179,7 +179,7 @@ require("functions/engine.php");
                 </div>
                 <div class="col-sm-4">
                 <div class="thumbnail">
-                    <img src="img/nadeem.png" alt="San Francisco">
+                    <img src="img/mac.png" alt="San Francisco">
                         <p><strong>Mac Book-Air</strong></p>
                             <p style="color:red;"><del>600JD</del></p>
                             <p>500JD</p>
@@ -286,7 +286,7 @@ require("functions/engine.php");
                                   </a>
                                   <span>
                                       <img id="newst_item_icon_td" src="images/New-icon2.png" />
-                                    </span>
+                                  </span>
                                 </div>
                                 
                               </td>
@@ -312,6 +312,9 @@ require("functions/engine.php");
                                <img id="item_box_img" src="'.$s[$j]["path"].'" />
                                <div id="item_box_data">'.$s[$j]["name"].'</div>
                              </a>
+                             <span>
+                                 <img id="newst_item_icon_td" src="images/New-icon2.png" />
+                             </span>
                             </div>
                         </td>
                     ';
@@ -339,6 +342,9 @@ require("functions/engine.php");
                                   <img id="item_box_img" src="'.$s[$j]["path"].'"/>
                                   <div id="item_box_data">'.$s[$j]["name"].'</div>
                                 </a>
+                                <span>
+                                  <img id="newst_item_icon_td" src="images/New-icon2.png" />
+                                </span>
                             </div>
                            
                           </td>';

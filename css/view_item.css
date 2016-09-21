@@ -111,13 +111,17 @@
 }
 #search_field input[type="search"]{
   margin-top:5px;
-  padding:5px;
-  width:300px;
+  margin-left: 60px;
+  padding:9px;
+  width:400px;
   border:none;
   border:1px solid lightgray;
-  border-radius:4px;
-  box-shadow:inset 0px 0px 10px 1px lightgray;
-  color:rgba(52,52,55,0.8);
+  border-radius:3px;
+  font-size: 15px;
+  color:#47476b;
+  -webkit-box-shadow: inset 0px 0px 14px -8.5px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 14px -8.5px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 14px -8.5px rgba(0,0,0,0.75);
 }
 
 
