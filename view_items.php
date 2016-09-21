@@ -47,12 +47,7 @@ require("functions/engine.php");
                  <a href="#">Lenovo ideapad</a> >
                  <a href="#">Flex 15</a>
                </nav>
-                 
-              <div id="search_field">
-                   <input type="search" placeholder="search item .." />
-              </div>
-             
-             
+                
               
              </div>
 
@@ -72,7 +67,11 @@ require("functions/engine.php");
                         </div>
 
                       </div>
-
+ 
+                      <div id="search_field">
+                         <input type="search" placeholder="search item .." />
+                      </div>
+             
 
                       <div id="order_items_by">
                          <button id="order_items_by_button">Order By</button>
