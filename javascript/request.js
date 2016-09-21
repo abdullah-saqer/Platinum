@@ -9,15 +9,12 @@ $(document).ready(function(){
 
          var len = $('#crcb_bottom_section*').length;
          var index = $('#customer_request_box_top_bar*').index(this);
-
          
          for(i=0;i<len;i++){
          	if($('#crcb_bottom_section*').eq(i).css('display')=='block' && i!=index){
          		$('#crcb_bottom_section*').eq(i).slideUp(400);
          	}
          }
-
-
 		
 		$('#crcb_bottom_section*').eq(index).slideToggle(400);
 	});

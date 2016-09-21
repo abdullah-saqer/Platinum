@@ -49,7 +49,6 @@ require("functions/engine.php");
                </nav>
                  
               <div id="search_field">
-                   <i class="fa fa-search" style="font-size:13px"></i>
                    <input type="search" placeholder="search item .." />
               </div>
              
