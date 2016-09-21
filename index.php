@@ -259,8 +259,12 @@ require("functions/engine.php");
                         <a href=<?php echo '"view_item.php?id='.$s[0]["id"].'"'; ?> >
                           <img id="item_box_img" src=<?php echo'"'.$s[0]["path"].'"';   ?> />
                           <div id="item_box_data_first_box"><?php echo $s[0]["name"];?></div>
-
                         </a>
+
+                        <span>
+                          <img id="newest_item_icon" src="images/New-icon2.png" />
+                        </span>
+
                       </div>
                    
                   </td>
@@ -280,6 +284,9 @@ require("functions/engine.php");
                                     <img id="item_box_img" src="'.$s[$j]["path"].'" />
                                       <div id="item_box_data">'.$s[$j]["name"].'</div>
                                   </a>
+                                  <span>
+                                      <img id="newst_item_icon_td" src="images/New-icon2.png" />
+                                    </span>
                                 </div>
                                 
                               </td>
