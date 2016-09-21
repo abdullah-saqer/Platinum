@@ -1,13 +1,23 @@
+#body{
+	width:100%;
+	background:white;
+	font-family:Arial; 
+	display:-webkit-box; display:-moz-box;
+	-webkit-box-orient:vertical;
+  -moz-box-orient:vertical;
+  -webkit-box-flex:1; -moz-box-flex:1;
+}
 
-
-
-
-
-
-
-
-
-
+#top_title_bar{
+   border-bottom:2px solid rgb(77, 77, 77);
+   text-align:center;
+   width:100%;
+   background:rgb(235, 235, 224);
+   font-size:25px; font-weight:bold;
+   color:rgb(77, 77, 77);
+   padding:15px 0px 15px 0px;
+   margin-bottom:30px;
+}
 
 
 

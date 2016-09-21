@@ -3,10 +3,92 @@ require("../functions/connect.php");
 require("../functions/engine.php");
 checklogin();
 ?>
-<link rel="stylesheet" type="text/css" href="../css/request.css">
-<!--<script type="text/javascript" src="../javascript/request.js"></script>-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/request.css">
+    <script type="text/javascript" src="../javascript/request.js"></script>
+</head>
+<body>
+    
+   <div id="body">
+   	   
+   	   <div id="top_title_bar">Customers Requests</div>
+   	   
+   	     <div id="customers_requests_box">
+   	      	
+   	      	<div id="customer_box_top_bar">Customer Reuqest</div>
+   	      	<div id="customer_bottom_content_box">
+   	      		
+   	      		<div id="customer_data">
+   	      			
+   	      			<div id="customer_data_top_bar">Customer data</div>
+   	      			
+   	      			<div id="customer_data_bottom_box">
+   	      				<table id="customer_data_table" border="1">
+   	      				   <tr>
+   	      					<th>Customer Name</th>
+   	      					<td>Nadeem Abu Khader</td>
+   	      				   </tr>
+   	      				   <tr>
+   	      					<th>Customer Phone Number</th>
+   	      					<td>+(962)786875133</td>
+   	      				   </tr>
+   	      				   <tr>
+   	      					<th>Customer Location</th>
+   	      					<td>Rusifah Az Zarqa</td>
+   	      				   </tr>
+   	      				</table>
+   	      			</div>
+
+   	      			<div id="customer_requested_items_box">
+   	      			      
+   	      			      <div id="customer_requested_item_title_bar">Cusotmer Reuested Items</div>
+                          <div id="customer_requested_items_section">
+                          	<div id="requested_item_box">
+                          		<img src="" id="requested_item_image"/>
+                          		<table id="requested_item_table_data" border=1>
+                          			<tr>
+                          			  <td>Item Name</td>
+                          			  <td>name</td>	
+                          			</tr> 
+                          			<tr>
+                          			  <td>Item Quantity</td>
+                          			  <td>qun</td>	
+                          			</tr> 
+                          			<tr>
+                          			  <td>Item describtion</td>
+                          			  <td></td>	
+                          			</tr>                          			
+                          		</table>
+                          	</div>
+                          </div>
+   	      			</div>
+
+   	      		</div>
+
+   	        </div>
+
+   	    </div>
+
+   </div>
+  
+
+</body>
+</html>
+
+
+
+
+
+
 
 <!--
+ 
+
 	<div id="item_request_box">
 			<table id="table_box">
 				<tr> 
