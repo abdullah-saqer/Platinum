@@ -247,25 +247,41 @@ require("functions/engine.php");
        <div id="latest_items_box">
          <table id="latest_items_table">
           <tr> 
-                
-                  <td rowspan="2">
-                    <a href="#">
+            <td rowspan="2">
                       <div id="td_content">
-                        <img id="item_box_img" src=<?php echo'"'.$s[0]["path"].'"';   ?> />
+                        <span>
+                          <img src="images/tag.png" id="price_tag_last_item"/>
+                          <p id="price_tag_last_item_value"><?php echo $s[0]["price"];?>
+                            <sub>JDs</sub>
+                          </p>
+                        </span>
+
+                        <a href=<?php echo '"view_item.php?id='.$s[0]["id"].'"'; ?> >
+                          <img id="item_box_img" src=<?php echo'"'.$s[0]["path"].'"';   ?> />
                           <div id="item_box_data_first_box"><?php echo $s[0]["name"];?></div>
+
+                        </a>
                       </div>
-                    </a>
+                   
                   </td>
                   <?php
                      for($j=1;$j<4;$j++)
                             echo'
                               <td>
-                                <a href="#">
                                  <div id="td_content">
+                                     <span>
+                                        <img src="images/tag-no-shadow.png" id="price_tag_row" />
+                                        <p id="price_tag_row_value">
+                                          '.$s[$j]["price"].'
+                                          <sub>JDs</sub>
+                                        </p>
+                                     </span>
+                                  <a href="view_item.php?id='.$s[$j]["id"].'">
                                     <img id="item_box_img" src="'.$s[$j]["path"].'" />
                                       <div id="item_box_data">'.$s[$j]["name"].'</div>
-                                  </div>
-                                </a>
+                                  </a>
+                                </div>
+                                
                               </td>
                             ';
                     ?>
@@ -278,12 +294,18 @@ require("functions/engine.php");
                for($j=4;$j<7;$j++)
                     echo '
                        <td>
-                          <a href="#">
                             <div id="td_content">
+                                <span>
+                                   <img src="images/tag-no-shadow.png" id="price_tag_row" />
+                                   <p id="price_tag_row_value">'.$s[$j]["price"].'
+                                   <sub>JDs</sub>
+                                   </p>
+                                </span>
+                            <a href="view_item.php?id='.$s[$j]["id"].'">
                                <img id="item_box_img" src="'.$s[$j]["path"].'" />
-                                 <div id="item_box_data">'.$s[$j]["name"].'</div>
+                               <div id="item_box_data">'.$s[$j]["name"].'</div>
+                             </a>
                             </div>
-                          </a>
                         </td>
                     ';
                     ?>
@@ -298,12 +320,20 @@ require("functions/engine.php");
                 <?php
                   for($j=7;$j<12;$j++)
                       echo'<td>
-                          <a href="#">
+                          
                             <div id="td_content">
-                                <img id="item_box_img" src="'.$s[$j]["path"].'" />
-                                 <div id="item_box_data">'.$s[$j]["name"].'</div>
+                                <span>
+                                   <img src="images/tag-no-shadow.png" id="price_tag_row" />
+                                   <p id="price_tag_row_value">'.$s[$j]["price"].'
+                                     <sub>JDs</sub>
+                                   </p>
+                                </span>
+                                <a href="view_item.php?id='.$s[$j]["id"].'">
+                                  <img id="item_box_img" src="'.$s[$j]["path"].'"/>
+                                  <div id="item_box_data">'.$s[$j]["name"].'</div>
+                                </a>
                             </div>
-                           </a>
+                           
                           </td>';
 
                 ?>

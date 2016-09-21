@@ -59,7 +59,7 @@ require("functions/engine.php");
              <div id="content_section">
 
                   <div id="item_title_bar">
-                    Lenovo Ideapad Flex 15
+                    <p>Lenovo Ideapad Flex 15<p>
                   </div>
               
                   <div id="content_box">
