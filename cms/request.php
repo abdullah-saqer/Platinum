@@ -44,16 +44,199 @@ checklogin();
 
            	    <div id="cutsomer_requested_items_table_bottom">
            	    	 <div id="critb_top_bar">Customer Requested Items</div>
-           	    	 <table id="requested_items_table">
-           	    	 	 <tr>
-           	    	 	 	<th>#</th>
-           	    	 	 	<th>Item image</th>
-           	    	 	 	<th>Item Name</th>
-           	    	 	 	<th>Item Price</th>
-           	    	 	 	<th>Quantity</th>
-           	    	 	 	<th>description</th>
-           	    	 	 </tr>
-           	    	 </table>
+           	    	 <div id="requested_items_table_container">
+	           	    	 <table id="requested_items_table">
+	           	    	 	 <tr>
+	           	    	 	 	<th>#</th>
+	           	    	 	 	<th>Item image</th>
+	           	    	 	 	<th>Item Name</th>
+	           	    	 	 	<th>Item Price</th>
+	           	    	 	 	<th>Quantity</th>
+	           	    	 	 	<th></th>
+	           	    	 	 	<th></th>
+	           	    	 	 </tr>
+	           	    	 	 <tr>
+	           	    	 	 	<td>1</td>
+	           	    	 	 	<td><img src="pro.png"></td>
+	           	    	 	 	<td>Mac Pro</td>
+	           	    	 	 	<td>900</td>
+	           	    	 	 	<td>1</td>
+	           	    	 	 	<td><i class="fa fa-check" id="confirm" onclick="alert('confirm')"></i></td>
+	           	    	 	 	<td><i class="fa fa-close" id="refuse" onclick="alert('refuse')"></i></td>
+	           	    	 	 </tr>
+	           	    	 	 <tr>
+	           	    	 	 	<td>1</td>
+	           	    	 	 	<td><img src="pro.png"></td>
+	           	    	 	 	<td>Mac Pro</td>
+	           	    	 	 	<td>900</td>
+	           	    	 	 	<td>1</td>
+	           	    	 	 	<td><i class="fa fa-check" id="confirm" onclick="alert('confirm')"></i></td>
+	           	    	 	 	<td><i class="fa fa-close" id="refuse" onclick="alert('refuse')"></i></td>
+	           	    	 	 </tr>
+	           	    	 	 <tr>
+	           	    	 	 	<td>1</td>
+	           	    	 	 	<td><img src="pro.png"></td>
+	           	    	 	 	<td>Mac Pro</td>
+	           	    	 	 	<td>900</td>
+	           	    	 	 	<td>1</td>
+	           	    	 	 	<td><i class="fa fa-check" id="confirm" onclick="alert('confirm')"></i></td>
+	           	    	 	 	<td><i class="fa fa-close" id="refuse" onclick="alert('refuse')"></i></td>
+	           	    	 	 </tr>
+	           	    	 	 <tr>
+	           	    	 	 	<td colspan="7">Total Price(700JD)</td>
+	           	    	 	 </tr>
+	           	    	 </table>
+           	    	 </div>
+           	    </div>
+
+           </div>
+
+   	   </div>
+
+   	   <div id="customer_request_box">
+   
+   	   	   <div id="customer_request_box_top_bar">Customer Request 1 <span style="float:right;margin-right:10px;" id="item_qunt_top_bar">Items requested(5)</span></div>
+   
+           <div id="crcb_bottom_section">
+           	    
+           	    <table id="customer_data_table">
+           	    	<tr> 
+                      <th colspan="3">Customer Data</th>
+           	    	</tr>
+           	    	<tr>
+           	    		<th>Customer Name</th>
+           	    		<th>Customer Mobile</th>
+           	    		<th>Customer Location</th>
+           	    	</tr>
+           	    	<tr>
+           	    		<td>Nadeem Abu Khader</td>
+           	    		<td>0780086927</td>
+           	    		<td>Az Zarqa Rusifah</td>
+           	    	</tr>
+           	    </table>
+
+           	    <hr />
+
+           	    <div id="cutsomer_requested_items_table_bottom">
+           	    	 <div id="critb_top_bar">Customer Requested Items</div>
+           	    	 <div id="requested_items_table_container">
+	           	    	 <table id="requested_items_table">
+	           	    	 	 <tr>
+	           	    	 	 	<th>#</th>
+	           	    	 	 	<th>Item image</th>
+	           	    	 	 	<th>Item Name</th>
+	           	    	 	 	<th>Item Price</th>
+	           	    	 	 	<th>Quantity</th>
+	           	    	 	 	<th></th>
+	           	    	 	 	<th></th>
+	           	    	 	 </tr>
+	           	    	 	 <tr>
+	           	    	 	 	<td>1</td>
+	           	    	 	 	<td><img src="pro.png"></td>
+	           	    	 	 	<td>Mac Pro</td>
+	           	    	 	 	<td>900</td>
+	           	    	 	 	<td>1</td>
+	           	    	 	 	<td><i class="fa fa-check" id="confirm" onclick="alert('confirm')"></i></td>
+	           	    	 	 	<td><i class="fa fa-close" id="refuse" onclick="alert('refuse')"></i></td>
+	           	    	 	 </tr>
+	           	    	 	 <tr>
+	           	    	 	 	<td>1</td>
+	           	    	 	 	<td><img src="pro.png"></td>
+	           	    	 	 	<td>Mac Pro</td>
+	           	    	 	 	<td>900</td>
+	           	    	 	 	<td>1</td>
+	           	    	 	 	<td><i class="fa fa-check" id="confirm" onclick="alert('confirm')"></i></td>
+	           	    	 	 	<td><i class="fa fa-close" id="refuse" onclick="alert('refuse')"></i></td>
+	           	    	 	 </tr>
+	           	    	 	 <tr>
+	           	    	 	 	<td>1</td>
+	           	    	 	 	<td><img src="pro.png"></td>
+	           	    	 	 	<td>Mac Pro</td>
+	           	    	 	 	<td>900</td>
+	           	    	 	 	<td>1</td>
+	           	    	 	 	<td><i class="fa fa-check" id="confirm" onclick="alert('confirm')"></i></td>
+	           	    	 	 	<td><i class="fa fa-close" id="refuse" onclick="alert('refuse')"></i></td>
+	           	    	 	 </tr>
+	           	    	 	 <tr>
+	           	    	 	 	<td colspan="7">Total Price(700JD)</td>
+	           	    	 	 </tr>
+	           	    	 </table>
+           	    	 </div>
+           	    </div>
+
+           </div>
+
+   	   </div>
+
+   	   <div id="customer_request_box">
+   
+   	   	   <div id="customer_request_box_top_bar">Customer Request 1 <span style="float:right;margin-right:10px;" id="item_qunt_top_bar">Items requested(5)</span></div>
+   
+           <div id="crcb_bottom_section">
+           	    
+           	    <table id="customer_data_table">
+           	    	<tr> 
+                      <th colspan="3">Customer Data</th>
+           	    	</tr>
+           	    	<tr>
+           	    		<th>Customer Name</th>
+           	    		<th>Customer Mobile</th>
+           	    		<th>Customer Location</th>
+           	    	</tr>
+           	    	<tr>
+           	    		<td>Nadeem Abu Khader</td>
+           	    		<td>0780086927</td>
+           	    		<td>Az Zarqa Rusifah</td>
+           	    	</tr>
+           	    </table>
+
+           	    <hr />
+
+           	    <div id="cutsomer_requested_items_table_bottom">
+           	    	 <div id="critb_top_bar">Customer Requested Items</div>
+           	    	 <div id="requested_items_table_container">
+	           	    	 <table id="requested_items_table">
+	           	    	 	 <tr>
+	           	    	 	 	<th>#</th>
+	           	    	 	 	<th>Item image</th>
+	           	    	 	 	<th>Item Name</th>
+	           	    	 	 	<th>Item Price</th>
+	           	    	 	 	<th>Quantity</th>
+	           	    	 	 	<th></th>
+	           	    	 	 	<th></th>
+	           	    	 	 </tr>
+	           	    	 	 <tr>
+	           	    	 	 	<td>1</td>
+	           	    	 	 	<td><img src="pro.png"></td>
+	           	    	 	 	<td>Mac Pro</td>
+	           	    	 	 	<td>900</td>
+	           	    	 	 	<td>1</td>
+	           	    	 	 	<td><i class="fa fa-check" id="confirm" onclick="alert('confirm')"></i></td>
+	           	    	 	 	<td><i class="fa fa-close" id="refuse" onclick="alert('refuse')"></i></td>
+	           	    	 	 </tr>
+	           	    	 	 <tr>
+	           	    	 	 	<td>1</td>
+	           	    	 	 	<td><img src="pro.png"></td>
+	           	    	 	 	<td>Mac Pro</td>
+	           	    	 	 	<td>900</td>
+	           	    	 	 	<td>1</td>
+	           	    	 	 	<td><i class="fa fa-check" id="confirm" onclick="alert('confirm')"></i></td>
+	           	    	 	 	<td><i class="fa fa-close" id="refuse" onclick="alert('refuse')"></i></td>
+	           	    	 	 </tr>
+	           	    	 	 <tr>
+	           	    	 	 	<td>1</td>
+	           	    	 	 	<td><img src="pro.png"></td>
+	           	    	 	 	<td>Mac Pro</td>
+	           	    	 	 	<td>900</td>
+	           	    	 	 	<td>1</td>
+	           	    	 	 	<td><i class="fa fa-check" id="confirm" onclick="alert('confirm')"></i></td>
+	           	    	 	 	<td><i class="fa fa-close" id="refuse" onclick="alert('refuse')"></i></td>
+	           	    	 	 </tr>
+	           	    	 	 <tr>
+	           	    	 	 	<td colspan="7">Total Price(700JD)</td>
+	           	    	 	 </tr>
+	           	    	 </table>
+           	    	 </div>
            	    </div>
 
            </div>

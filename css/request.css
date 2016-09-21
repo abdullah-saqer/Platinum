@@ -26,7 +26,7 @@
   -moz-box-orient:vertical;
   -webkit-box-flex:1; -moz-box-flex:1;
   margin:5px 2px 5px 2px;
-   box-shadow:0px 0px 10px 2px rgb(230, 230, 230);
+   box-shadow:0px 0px 5px 1px rgb(230, 230, 230); 
 }
 
 #customer_request_box_top_bar{
@@ -42,7 +42,7 @@
 
 #crcb_bottom_section{
 	padding:5px;
-	display:-webkit-box; display:-moz-box;
+	display:none;
 	-webkit-box-orient:vertical;
   -moz-box-orient:vertical;
   -webkit-box-flex:1; -moz-box-flex:1;
@@ -85,7 +85,65 @@
 }
 
 #cutsomer_requested_items_table_bottom{
+	
+}
+
+#critb_top_bar{
+	background:rgb(242, 242, 242);
+   color:rgb(77, 77, 77);
+   text-align:center;
+   padding:10px 0px 10px 0px;
+   font-size:18px;
+   box-shadow:inset 0px 0px 10px 1px rgb(230, 230, 230);
+   cursor:pointer;
+   border:1px solid lightgray;
+}
+
+#requested_items_table_container{
+	display:none;
+}
+
+#requested_items_table{
+	width:100%;
+	font-size:18px;
+	color:rgb(77, 77, 77);
+}
+
+#requested_items_table tr th{
+	font-size:17px;
+	padding:8px 0px 8px 0px;
 	border:1px solid lightgray;
+	color:rgb(77, 77, 77);
+}
+
+#requested_items_table tr td{
+	font-size:17px;
+	border:1px solid lightgray;
+	text-align:center;
+	padding:10px;
+}
+
+#requested_items_table tr td img{
+	height:100px;
+	width:150px;
+}
+
+#requested_items_table tr:nth-child(even){
+	background:	rgb(248, 248, 248);
+}
+
+
+#requested_items_table tr td i{
+	font-size:28px;
+	cursor:pointer;
+}
+
+#requested_items_table tr td #confirm{
+	color:rgb(128, 255, 128);
+}
+
+#requested_items_table tr td #refuse{
+	color:rgb(255, 77, 77);
 }
 
 
