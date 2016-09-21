@@ -18,61 +18,47 @@ checklogin();
    	   
    	   <div id="top_title_bar">Customers Requests</div>
    	   
-   	     <div id="customers_requests_box">
-   	      	
-   	      	<div id="customer_box_top_bar">Customer Reuqest</div>
-   	      	<div id="customer_bottom_content_box">
-   	      		
-   	      		<div id="customer_data">
-   	      			
-   	      			<div id="customer_data_top_bar">Customer data</div>
-   	      			
-   	      			<div id="customer_data_bottom_box">
-   	      				<table id="customer_data_table" border="1">
-   	      				   <tr>
-   	      					<th>Customer Name</th>
-   	      					<td>Nadeem Abu Khader</td>
-   	      				   </tr>
-   	      				   <tr>
-   	      					<th>Customer Phone Number</th>
-   	      					<td>+(962)786875133</td>
-   	      				   </tr>
-   	      				   <tr>
-   	      					<th>Customer Location</th>
-   	      					<td>Rusifah Az Zarqa</td>
-   	      				   </tr>
-   	      				</table>
-   	      			</div>
+   	   <div id="customer_request_box">
+   
+   	   	   <div id="customer_request_box_top_bar">Customer Request 1 <span style="float:right;margin-right:10px;" id="item_qunt_top_bar">Items requested(5)</span></div>
+   
+           <div id="crcb_bottom_section">
+           	    
+           	    <table id="customer_data_table">
+           	    	<tr> 
+                      <th colspan="3">Customer Data</th>
+           	    	</tr>
+           	    	<tr>
+           	    		<th>Customer Name</th>
+           	    		<th>Customer Mobile</th>
+           	    		<th>Customer Location</th>
+           	    	</tr>
+           	    	<tr>
+           	    		<td>Nadeem Abu Khader</td>
+           	    		<td>0780086927</td>
+           	    		<td>Az Zarqa Rusifah</td>
+           	    	</tr>
+           	    </table>
 
-   	      			<div id="customer_requested_items_box">
-   	      			      
-   	      			      <div id="customer_requested_item_title_bar">Cusotmer Reuested Items</div>
-                          <div id="customer_requested_items_section">
-                          	<div id="requested_item_box">
-                          		<img src="" id="requested_item_image"/>
-                          		<table id="requested_item_table_data" border=1>
-                          			<tr>
-                          			  <td>Item Name</td>
-                          			  <td>name</td>	
-                          			</tr> 
-                          			<tr>
-                          			  <td>Item Quantity</td>
-                          			  <td>qun</td>	
-                          			</tr> 
-                          			<tr>
-                          			  <td>Item describtion</td>
-                          			  <td></td>	
-                          			</tr>                          			
-                          		</table>
-                          	</div>
-                          </div>
-   	      			</div>
+           	    <hr />
 
-   	      		</div>
+           	    <div id="cutsomer_requested_items_table_bottom">
+           	    	 <div id="critb_top_bar">Customer Requested Items</div>
+           	    	 <table id="requested_items_table">
+           	    	 	 <tr>
+           	    	 	 	<th>#</th>
+           	    	 	 	<th>Item image</th>
+           	    	 	 	<th>Item Name</th>
+           	    	 	 	<th>Item Price</th>
+           	    	 	 	<th>Quantity</th>
+           	    	 	 	<th>description</th>
+           	    	 	 </tr>
+           	    	 </table>
+           	    </div>
 
-   	        </div>
+           </div>
 
-   	    </div>
+   	   </div>
 
    </div>
   

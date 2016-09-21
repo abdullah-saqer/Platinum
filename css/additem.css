@@ -129,14 +129,29 @@ box-shadow: inset 14px -28px 37px -48px rgba(0,0,0,0.75);
     display:-webkit-box;
     display:-moz-box;
 }
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
 #item_name{
 	border-right:1px solid lightgray;
+<<<<<<< HEAD
 	overflow:scroll;
+=======
+	overflow-x:scroll;
+	overflow-y:hidden;
+>>>>>>> c31b9e00ac37f9e25514d3f5895f995561592672
 	background-color:white;
 	width:240px; height:56px;
 	padding:5px;
 	white-space:nowrap;
 	text-overflow:ellipsis;
+	
 }
 #item_name p{
 	font-size:12px;

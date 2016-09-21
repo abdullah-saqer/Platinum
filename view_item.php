@@ -59,13 +59,19 @@ require("functions/engine.php");
              <div id="content_section">
 
                   <div id="item_title_bar">
-                    Lenovo Ideapad Flex 15
+                    <p>Lenovo Ideapad Flex 15<p>
                   </div>
               
                   <div id="content_box">
                      <div id="item_picture_boxes">
                           <table><!-- Master photo -->
                                  <tr>
+
+                                  <span>
+                                      <img id="price_tag" src="images/tag.png"/>
+                                      <span id="price_tag_value">350</span>
+                                  </span>
+
                                   <td colspan="3">
                                     <img src="nadeem.png" id="primary_photo" >
                                     
