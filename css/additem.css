@@ -140,12 +140,10 @@ box-shadow: inset 14px -28px 37px -48px rgba(0,0,0,0.75);
 }
 #item_name{
 	border-right:1px solid lightgray;
-<<<<<<< HEAD
+
 	overflow:scroll;
-=======
 	overflow-x:scroll;
 	overflow-y:hidden;
->>>>>>> c31b9e00ac37f9e25514d3f5895f995561592672
 	background-color:white;
 	width:240px; height:56px;
 	padding:5px;
