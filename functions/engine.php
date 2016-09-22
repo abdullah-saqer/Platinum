@@ -59,10 +59,10 @@ if(!isset($_SESSION['user_id']))
 function getUsername(){
  if(isset($_SESSION['user_id'])){
 	$key=$_SESSION['user_id'];
-	$query="SELECT username FROM users WHERE id='$key'";
+	$query="SELECT First_name FROM users WHERE id='$key'";
 	$result=$GLOBALS['conn']->query($query);
 	while($r=$result->fetch_assoc())
-		return $r["username"];
+		return $r["First_name"];
 }
 }
 
